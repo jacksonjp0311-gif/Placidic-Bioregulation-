@@ -45,7 +45,7 @@ def run_benchmark(
     calibration_grid_path = Path(calibration_grid_path)
     metric_manifest_path = Path(metric_manifest_path)
 
-    run_id = "run_" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    run_id = "run_" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ")
     run_dir = root / "runs" / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
