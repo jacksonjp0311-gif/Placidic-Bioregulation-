@@ -29,3 +29,10 @@ Route selection must be validated against non-routed controls.
 ## E - Example
 
 python -m pba.cli routed-validation-report
+
+## PBSA v2.2 external validation policy
+
+Added:
+- external_validation_policy_v2_2.json
+
+This policy compares internal routed validation against external-domain routed validation and emits route drift.

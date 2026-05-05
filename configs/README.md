@@ -84,3 +84,12 @@ Added:
 - configs/validation/routed_validation_policy_v2_1.json
 
 This config compares routed PBSA against champion-only, baseline-only, candidate-only, and reject/manual-review controls.
+
+## PBSA v2.2 external-domain config
+
+Added:
+- configs/external_domains/*.json
+- configs/external_validation_suite_v2_2.json
+- configs/validation/external_validation_policy_v2_2.json
+
+These configs test whether internally validated routing survives external unseen toy-domain families.

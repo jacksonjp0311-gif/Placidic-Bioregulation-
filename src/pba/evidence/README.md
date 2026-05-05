@@ -84,3 +84,10 @@ Added:
 - routed_validation_report.py
 
 The report emits routed advantage, route preservation score, best control policy, and route failure surface.
+
+## PBSA v2.2 external validation report
+
+Added:
+- external_validation_report.py
+
+The report emits internal advantage, external advantage, advantage drift, preservation drift, route frequency drift, and external failure surface.

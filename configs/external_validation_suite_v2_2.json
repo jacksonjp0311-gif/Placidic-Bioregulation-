@@ -1,0 +1,20 @@
+{
+  "version": "PBSA-ExternalValidationSuite-v2.2",
+  "suite_id": "external_validation_suite_v2_2",
+  "description": "External toy-domain suite for PBSA v2.2 generalization testing.",
+  "external_domain_configs": [
+    "configs/external_domains/delayed_recovery_external.json",
+    "configs/external_domains/slow_drift_external.json",
+    "configs/external_domains/sharp_shock_external.json",
+    "configs/external_domains/mixed_regime_external.json",
+    "configs/external_domains/ambiguous_low_confidence_external.json"
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "external_validation_is_biological_validation": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

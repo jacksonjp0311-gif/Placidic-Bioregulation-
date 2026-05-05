@@ -1,24 +1,24 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.1
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.2
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository  
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
-Package version: 1.1.0  
-Current software architecture: PBSA v2.1 - Routed-Suite Validation  
+Package version: 1.2.0  
+Current software architecture: PBSA v2.2 - External-Domain Validation  
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
 Current global decision: route_by_regime  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 53 passing  
+Current tests: 63 passing  
 Candidate execution: comparison harness only  
 Route execution: enabled through governed routing reports  
 Manual review required: true  
 Automatic kernel replacement: disabled  
 Kernel mutation: disabled  
-Next target: PBSA v2.2 - External-Domain Validation  
+Next target: PBSA v2.3 - Stress/Adversarial Validation  
 
 ---
 
@@ -26,10 +26,10 @@ Next target: PBSA v2.2 - External-Domain Validation
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v2.1 | implemented and pushed |
+| Software architecture | PBSA v2.2 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 1.1.0 | active |
-| Test suite | 53 passing | active |
+| Python package | 1.2.0 | active |
+| Test suite | 63 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Champion/challenger decision | route_by_regime | active |
@@ -40,7 +40,7 @@ Next target: PBSA v2.2 - External-Domain Validation
 | Automatic kernel replacement | disabled | active |
 | Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v2.2 | external-domain validation |
+| Next planned layer | PBSA v2.3 | stress/adversarial validation |
 
 ## Current architecture status
 
@@ -295,7 +295,7 @@ Current published status:
 
 - PBSA v2.0 regime-routed architecture added.
 - PBA v1.4 theory/governance docs archived.
-- Package version: 1.1.0.
+- Package version: 1.2.0.
 - 44 tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
@@ -345,13 +345,13 @@ This section preserves stable README anchors required by the executable RCC docu
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v2.1
+- PBSA_VERSION: PBSA-v2.2
 - PBA_VERSION: PBA-v1.4
-- package version: 1.1.0
+- package version: 1.2.0
 - current global decision: route_by_regime
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
-- current tests: 53 passing
+- current tests: 63 passing
 - candidate execution allowed: comparison harness only
 - route execution enabled: governed reports only
 - manual review required: true
@@ -360,7 +360,7 @@ Current canonical versions:
 - current docs archive: docs/theory and docs/architecture
 - current routing policy: configs/routing/regime_route_policy_v2_0.json
 - latest routed suite report: reports/routing/latest_routed_suite_report.json
-- next target: PBSA v2.2 external-domain validation
+- next target: PBSA v2.3 stress/adversarial validation
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, champion/challenger evidence, routed-suite evidence, route policy, route selector behavior, docs/theory, docs/architecture, or evolution reports change.
 
@@ -635,3 +635,39 @@ Command:
 
 Next target:
 - PBSA v2.2 external-domain validation
+
+
+## PBSA v2.2 External-Domain Validation Upgrade
+
+This repository now includes the PBSA v2.2 external-domain validation layer.
+
+Added surfaces:
+- external toy-domain family configs
+- external validation suite
+- external validation policy
+- external routed runner
+- internal-vs-external comparison metrics
+- route drift detector
+- external failure surface
+- external validation report
+- CLI command for external validation reports
+- docs/theory PBSA v2.2 archive
+- docs/architecture PBSA v2.2 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- External validation is not biological validation.
+- External advantage is not medical evidence.
+- Route drift must remain visible.
+- External failure surfaces must remain visible.
+- Baseline wins remain visible.
+- Holdout weakness remains visible.
+- Automatic kernel replacement remains disabled.
+- Kernel mutation remains disabled.
+- Do not treat benchmark success as biological validation.
+
+Command:
+    python -m pba.cli external-validation-report
+
+Next target:
+- PBSA v2.3 stress/adversarial validation

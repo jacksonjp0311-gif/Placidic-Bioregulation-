@@ -1,0 +1,11 @@
+{
+  "domain_id": "ambiguous_low_confidence_external",
+  "family": "ambiguous_low_confidence_external",
+  "primary_regime": "unknown",
+  "secondary_regimes": [
+    "low_confidence",
+    "external_domain"
+  ],
+  "external": true,
+  "description": "External ambiguous low-confidence toy domain."
+}

@@ -51,3 +51,8 @@ Added:
 
 Added:
 - python -m pba.cli routed-validation-report
+
+## PBSA v2.2 CLI command
+
+Added:
+- python -m pba.cli external-validation-report

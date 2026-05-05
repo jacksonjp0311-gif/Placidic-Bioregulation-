@@ -1,0 +1,11 @@
+{
+  "domain_id": "delayed_recovery_external",
+  "family": "delayed_recovery_external",
+  "primary_regime": "direct_recovery",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "external_domain"
+  ],
+  "external": true,
+  "description": "External delayed recovery toy domain."
+}

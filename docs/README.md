@@ -78,3 +78,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_1_routed_suite_validation.md
 - docs/architecture/pbsa_v2_1_implementation_map.md
+
+## PBSA v2.2 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_2_external_domain_validation.md
+- docs/architecture/pbsa_v2_2_implementation_map.md

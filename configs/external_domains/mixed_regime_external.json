@@ -1,0 +1,12 @@
+{
+  "domain_id": "mixed_regime_external",
+  "family": "mixed_regime_external",
+  "primary_regime": "pulse_recovery",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "pba_advantage",
+    "external_domain"
+  ],
+  "external": true,
+  "description": "External mixed-regime toy domain."
+}

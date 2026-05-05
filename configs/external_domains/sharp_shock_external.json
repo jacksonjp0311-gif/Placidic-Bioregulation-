@@ -1,0 +1,11 @@
+{
+  "domain_id": "sharp_shock_external",
+  "family": "sharp_shock_external",
+  "primary_regime": "noisy",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "external_domain"
+  ],
+  "external": true,
+  "description": "External sharp shock toy domain."
+}

@@ -72,3 +72,8 @@ Added:
 
 Added:
 - pbsa_v2_1_routed_suite_validation.md
+
+## PBSA v2.2 theory addition
+
+Added:
+- pbsa_v2_2_external_domain_validation.md

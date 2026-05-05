@@ -1,0 +1,12 @@
+{
+  "domain_id": "slow_drift_external",
+  "family": "slow_drift_external",
+  "primary_regime": "direct_recovery",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "cusp_risk",
+    "external_domain"
+  ],
+  "external": true,
+  "description": "External slow drift toy domain."
+}

@@ -1,0 +1,21 @@
+{
+  "version": "PBSA-ExternalValidationPolicy-v2.2",
+  "policy_id": "external_validation_policy_v2_2",
+  "external_suite": "external_validation_suite_v2_2",
+  "internal_reference_report": "reports/validation/latest_routed_validation_report.json",
+  "route_policy": "regime_route_policy_v2_0",
+  "drift_metrics": [
+    "advantage_drift",
+    "preservation_drift",
+    "failure_surface_drift",
+    "route_frequency_drift"
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "external_validation_is_biological_validation": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}
