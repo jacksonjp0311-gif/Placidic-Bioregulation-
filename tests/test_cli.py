@@ -1,7 +1,7 @@
-import unittest
+import os
 import subprocess
 import sys
-import os
+import unittest
 
 
 class TestCLI(unittest.TestCase):
@@ -12,7 +12,7 @@ class TestCLI(unittest.TestCase):
             [sys.executable, "-m", "pba.cli", "--help"],
             capture_output=True,
             text=True,
-            env=env
+            env=env,
         )
         self.assertEqual(result.returncode, 0)
         self.assertIn("PBSA", result.stdout)
