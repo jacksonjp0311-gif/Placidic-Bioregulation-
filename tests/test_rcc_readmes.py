@@ -1,0 +1,57 @@
+import unittest
+from pathlib import Path
+
+
+class TestRCCReadmes(unittest.TestCase):
+    def test_required_readmes_exist(self):
+        required = [
+            "README.md",
+            "configs/README.md",
+            "configs/domains/README.md",
+            "docs/README.md",
+            "docs/theory/README.md",
+            "docs/architecture/README.md",
+            "docs/benchmark_protocol/README.md",
+            "src/README.md",
+            "src/pba/README.md",
+            "src/pba/core/README.md",
+            "src/pba/baselines/README.md",
+            "src/pba/calibration/README.md",
+            "src/pba/evaluation/README.md",
+            "src/pba/evidence/README.md",
+            "src/pba/benchmarks/README.md",
+            "src/pba/cli/README.md",
+            "tests/README.md",
+            "runs/README.md",
+            "reports/README.md",
+            "ledgers/README.md",
+            "evidence_packages/README.md",
+            "scripts/README.md",
+        ]
+        for rel in required:
+            self.assertTrue(Path(rel).exists(), f"Missing RCC README: {rel}")
+
+    def test_root_readme_has_ai_instructions_and_non_claim_lock(self):
+        text = Path("README.md").read_text(encoding="utf-8")
+        self.assertIn("AI reader instructions", text)
+        self.assertIn("RCC documentation contract", text)
+        self.assertIn("Not medical guidance", text)
+        self.assertIn("Do not treat benchmark success as biological validation", text)
+
+    def test_mini_readmes_have_rcc_fields(self):
+        mini = [
+            "src/pba/core/README.md",
+            "src/pba/evidence/README.md",
+            "configs/README.md",
+        ]
+        for rel in mini:
+            text = Path(rel).read_text(encoding="utf-8")
+            self.assertIn("S — Formal specification", text)
+            self.assertIn("H — Hooks", text)
+            self.assertIn("A — Artifacts", text)
+            self.assertIn("I — Invariants", text)
+            self.assertIn("E — Example", text)
+
+
+if __name__ == "__main__":
+    unittest.main()

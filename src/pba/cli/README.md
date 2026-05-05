@@ -1,0 +1,32 @@
+# src/pba/cli
+
+## Purpose
+
+Command-line interface.
+
+## S — Formal specification
+
+Exposes run-benchmark, run-suite, and compile-evidence commands.
+
+## H — Hooks
+
+Used by scripts and human operators.
+
+## A — Artifacts
+
+- main.py
+- __main__.py
+
+## T — Theory
+
+CLI reproducibility is required for benchmark credibility.
+
+## I — Invariants
+
+- Commands must be reproducible from repo root.
+- CLI must print machine-readable JSON.
+- CLI must not push to GitHub.
+
+## E — Example
+
+python -m pba.cli run-suite --config .\configs\suite_v1_0.json

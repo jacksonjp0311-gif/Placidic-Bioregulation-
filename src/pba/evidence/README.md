@@ -1,0 +1,36 @@
+# src/pba/evidence
+
+## Purpose
+
+Evidence package, suite summary, file manifest, runtime ledger, and report generation.
+
+## S — Formal specification
+
+Turns runtime outputs into machine-readable evidence and conservative summaries.
+
+## H — Hooks
+
+Used by benchmark runner, suite runner, CLI, reports, ledgers, and root README.
+
+## A — Artifacts
+
+- runtime_ledger.py
+- evidence_package.py
+- report_generator.py
+- file_manifest.py
+- suite_summary.py
+
+## T — Theory
+
+Evidence must be machine-readable before narrative interpretation.
+
+## I — Invariants
+
+- Evidence package must preserve files and claim boundary.
+- Suite summary must aggregate without inflating claims.
+- Reports must preserve non-claim boundary.
+- Ledgers must record continuity.
+
+## E — Example
+
+reports/suite_summaries contains generated suite_summary.json and suite_summary.md.
