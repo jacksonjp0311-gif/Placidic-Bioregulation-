@@ -1,6 +1,6 @@
 # Placidic Bioregulation
 
-Codex Delta Phi "" Placidic Bioregulation Software Architecture PBSA v1.0
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.0
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.3.
 
@@ -10,7 +10,7 @@ GitHub push: not performed
 
 ---
 
-# PART I "" Human README
+# PART I - Human README
 
 ## Executive summary
 
@@ -167,7 +167,7 @@ Before GitHub push, verify:
 
 ---
 
-# PART II "" AI / Agent README
+# PART II - AI / Agent README
 
 ## AI operating contract
 
@@ -296,12 +296,12 @@ If benchmark behavior changed, also run:
 When adding a new major folder, create a mini README with:
 
 - Purpose
-- S "" Formal specification
-- H "" Hooks
-- A "" Artifacts
-- T "" Theory
-- I "" Invariants
-- E "" Example
+- S - Formal specification
+- H - Hooks
+- A - Artifacts
+- T - Theory
+- I - Invariants
+- E - Example
 
 Update tests/test_rcc_readmes.py so the documentation contract remains executable.
 
