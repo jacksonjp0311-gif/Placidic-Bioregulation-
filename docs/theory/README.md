@@ -62,3 +62,8 @@ This document defines holdout expansion and candidate readiness without kernel r
 
 Added:
 - pbsa_v1_4_champion_challenger_governance.md
+
+## PBSA v2.0 theory addition
+
+Added:
+- pbsa_v2_0_regime_routed_pbsa.md

@@ -69,3 +69,11 @@ Holdout evidence is computational only and does not validate biological claims.
 Added champion_challenger_report.py.
 
 The report compares candidate routes against the champion across original and holdout evidence while preserving baseline visibility, non-claim locks, and RCC boundaries.
+
+## PBSA v2.0 route evidence
+
+Added:
+- route_evidence.py
+- routed_suite_report.py
+
+Route evidence explains why a route was selected and preserves non-claim boundaries.

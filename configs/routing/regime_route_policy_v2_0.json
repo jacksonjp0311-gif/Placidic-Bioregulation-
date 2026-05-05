@@ -1,0 +1,64 @@
+{
+  "version": "PBSA-RoutePolicy-v2.0",
+  "policy_id": "regime_route_policy_v2_0",
+  "description": "Regime-routed PBSA route policy. Selects admissible baseline, champion, candidate, or reject routes under evidence gates.",
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "routing_is_biological_validation": false,
+  "routes": {
+    "baseline_proportional_route": {
+      "route_family": "baseline",
+      "route_id": "baseline_proportional_route",
+      "selected_when": [
+        "direct_recovery + baseline_advantage"
+      ],
+      "manual_review_required": false
+    },
+    "baseline_or_pulse_candidate_review": {
+      "route_family": "baseline_or_candidate_review",
+      "route_id": "baseline_or_pulse_candidate_review",
+      "selected_when": [
+        "pulse_recovery + baseline_advantage"
+      ],
+      "manual_review_required": true
+    },
+    "champion_pba_route": {
+      "route_family": "champion",
+      "route_id": "champion_pba_route",
+      "selected_when": [
+        "oscillatory + pba_advantage"
+      ],
+      "manual_review_required": false
+    },
+    "candidate_noisy_guard_route_pending_review": {
+      "route_family": "candidate",
+      "route_id": "candidate_noisy_guard_route_pending_review",
+      "selected_when": [
+        "noisy"
+      ],
+      "manual_review_required": true
+    },
+    "reject_route_selection": {
+      "route_family": "reject",
+      "route_id": "reject_route_selection",
+      "selected_when": [
+        "unknown",
+        "low_confidence"
+      ],
+      "manual_review_required": true
+    },
+    "preserve_champion_route": {
+      "route_family": "champion",
+      "route_id": "preserve_champion_route",
+      "selected_when": [
+        "fallback"
+      ],
+      "manual_review_required": false
+    }
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

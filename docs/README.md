@@ -66,3 +66,9 @@ Added:
 Added:
 - docs/theory/pbsa_v1_4_champion_challenger_governance.md
 - docs/architecture/pbsa_v1_4_implementation_map.md
+
+## PBSA v2.0 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_0_regime_routed_pbsa.md
+- docs/architecture/pbsa_v2_0_implementation_map.md

@@ -41,3 +41,8 @@ Added:
 
 Added:
 - python -m pba.cli champion-challenger-report
+
+## PBSA v2.0 CLI command
+
+Added:
+- python -m pba.cli routed-suite-report

@@ -1,3 +1,3 @@
-__version__ = "0.5.0"
-PBSA_VERSION = "PBSA-v1.4"
+__version__ = "1.0.0"
+PBSA_VERSION = "PBSA-v2.0"
 PBA_VERSION = "PBA-v1.4"

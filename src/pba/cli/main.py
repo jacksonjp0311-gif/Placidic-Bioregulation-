@@ -10,6 +10,7 @@ from pba.evidence.evidence_package import compile_evidence_package
 from pba.evidence.evolution_report import build_evolution_report
 from pba.evidence.holdout_summary import compile_holdout_summary
 from pba.evidence.champion_challenger_report import build_champion_challenger_report
+from pba.evidence.routed_suite_report import build_routed_suite_report
 from pba.evolution.candidate_readiness import build_candidate_readiness_report
 from pba.evolution.champion_challenger import compare_champion_challenger
 from pba.evolution.evolution_policy import load_evolution_policy
@@ -44,6 +45,8 @@ def main() -> int:
     cr.add_argument("--holdout-summary", default=None)
 
     ccr = sub.add_parser("champion-challenger-report")
+
+    rr = sub.add_parser("routed-suite-report")
 
     ck = sub.add_parser("compare-kernels")
     ck.add_argument("--champion-summary", default=None)
@@ -91,6 +94,11 @@ def main() -> int:
 
     if args.cmd == "champion-challenger-report":
         result = build_champion_challenger_report(root)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "routed-suite-report":
+        result = build_routed_suite_report(root)
         print(json.dumps(result, indent=2))
         return 0
 

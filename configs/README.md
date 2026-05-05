@@ -70,3 +70,10 @@ These are computational toy holdout domains only. They are not biological system
 Added configs/candidates/*.json for candidate routes.
 
 Candidate execution is allowed only inside comparison harnesses. Automatic promotion and kernel replacement are forbidden.
+
+## PBSA v2.0 routing config
+
+Added:
+- configs/routing/regime_route_policy_v2_0.json
+
+This policy selects baseline, champion, candidate, or reject routes under evidence gates.
