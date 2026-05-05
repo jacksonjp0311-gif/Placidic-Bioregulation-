@@ -1,0 +1,13 @@
+{
+  "domain_id": "ambiguous_overlay_stress",
+  "family": "ambiguous_overlay_stress",
+  "stress_type": "ambiguity",
+  "primary_regime": "unknown",
+  "secondary_regimes": [
+    "low_confidence",
+    "stress_domain"
+  ],
+  "unsafe": true,
+  "stress": true,
+  "description": "Ambiguous low-confidence stress domain."
+}

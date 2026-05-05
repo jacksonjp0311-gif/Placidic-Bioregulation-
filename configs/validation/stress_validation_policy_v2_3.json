@@ -1,0 +1,22 @@
+{
+  "version": "PBSA-StressValidationPolicy-v2.3",
+  "policy_id": "stress_validation_policy_v2_3",
+  "stress_suite": "stress_validation_suite_v2_3",
+  "external_reference_report": "reports/external_validation/latest_external_validation_report.json",
+  "route_policy": "regime_route_policy_v2_0",
+  "required_metrics": [
+    "safe_fail_score",
+    "crash_rate",
+    "stress_advantage_drift",
+    "stress_failure_surface"
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "stress_validation_is_biological_validation": false,
+  "stress_validation_is_medical_safety": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

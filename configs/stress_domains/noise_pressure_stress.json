@@ -1,0 +1,14 @@
+{
+  "domain_id": "noise_pressure_stress",
+  "family": "noise_pressure_stress",
+  "stress_type": "noise_injection",
+  "primary_regime": "noisy",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "external_domain",
+    "stress_domain"
+  ],
+  "unsafe": false,
+  "stress": true,
+  "description": "Noise-injected stress toy domain."
+}

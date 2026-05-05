@@ -93,3 +93,12 @@ Added:
 - configs/validation/external_validation_policy_v2_2.json
 
 These configs test whether internally validated routing survives external unseen toy-domain families.
+
+## PBSA v2.3 stress-domain config
+
+Added:
+- configs/stress_domains/*.json
+- configs/stress_validation_suite_v2_3.json
+- configs/validation/stress_validation_policy_v2_3.json
+
+These configs test whether externally validated routing fails safely under adversarial pressure.

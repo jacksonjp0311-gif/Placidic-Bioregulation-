@@ -77,3 +77,8 @@ Added:
 
 Added:
 - pbsa_v2_2_external_domain_validation.md
+
+## PBSA v2.3 theory addition
+
+Added:
+- pbsa_v2_3_stress_adversarial_validation.md

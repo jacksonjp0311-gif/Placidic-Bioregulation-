@@ -36,3 +36,10 @@ Added:
 - external_validation_policy_v2_2.json
 
 This policy compares internal routed validation against external-domain routed validation and emits route drift.
+
+## PBSA v2.3 stress validation policy
+
+Added:
+- stress_validation_policy_v2_3.json
+
+This policy requires safe-fail score, crash rate, stress advantage drift, and stress failure surface.

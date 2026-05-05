@@ -1,0 +1,17 @@
+{
+  "domain_id": "overlay_overload_stress",
+  "family": "overlay_overload_stress",
+  "stress_type": "overlay_overload",
+  "primary_regime": "direct_recovery",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "pba_advantage",
+    "cusp_risk",
+    "low_confidence",
+    "high_oscillation",
+    "stress_domain"
+  ],
+  "unsafe": true,
+  "stress": true,
+  "description": "Dense multi-overlay route-pressure stress domain."
+}

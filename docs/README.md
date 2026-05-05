@@ -84,3 +84,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_2_external_domain_validation.md
 - docs/architecture/pbsa_v2_2_implementation_map.md
+
+## PBSA v2.3 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_3_stress_adversarial_validation.md
+- docs/architecture/pbsa_v2_3_implementation_map.md

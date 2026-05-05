@@ -1,0 +1,15 @@
+{
+  "domain_id": "contradictory_regime_stress",
+  "family": "contradictory_regime_stress",
+  "stress_type": "contradictory_regime",
+  "primary_regime": "unknown",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "pba_advantage",
+    "low_confidence",
+    "stress_domain"
+  ],
+  "unsafe": true,
+  "stress": true,
+  "description": "Contradictory route evidence stress domain."
+}

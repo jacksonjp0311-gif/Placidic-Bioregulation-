@@ -1,0 +1,14 @@
+{
+  "domain_id": "boundary_case_stress",
+  "family": "boundary_case_stress",
+  "stress_type": "boundary_case",
+  "primary_regime": "pulse_recovery",
+  "secondary_regimes": [
+    "baseline_advantage",
+    "pba_advantage",
+    "stress_domain"
+  ],
+  "unsafe": false,
+  "stress": true,
+  "description": "Near-boundary route decision stress domain."
+}

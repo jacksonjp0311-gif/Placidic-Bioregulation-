@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.2",
+  "version": "PBSA-EvolutionPolicy-v2.3",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -30,7 +30,12 @@
     "external_validation_report_required": true,
     "advantage_drift_required": true,
     "preservation_drift_required": true,
-    "external_failure_surface_required": true
+    "external_failure_surface_required": true,
+    "stress_domain_configs_required": true,
+    "stress_validation_report_required": true,
+    "safe_fail_score_required": true,
+    "crash_rate_required": true,
+    "stress_failure_surface_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -62,7 +67,7 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "external_domain_validation",
+  "architecture_mode": "stress_adversarial_validation",
   "global_decision": "route_by_regime",
   "routing_is_global_replacement": false,
   "validation_decision_required": true,
@@ -70,5 +75,12 @@
   "external_validation_required": true,
   "route_drift_required": true,
   "external_failure_surface_required": true,
-  "external_validation_is_biological_validation": false
+  "external_validation_is_biological_validation": false,
+  "stress_validation_required": true,
+  "safe_fail_required": true,
+  "crash_rate_required": true,
+  "malformed_input_guard_required": true,
+  "contradictory_regime_detector_required": true,
+  "stress_validation_is_biological_validation": false,
+  "stress_validation_is_medical_safety": false
 }

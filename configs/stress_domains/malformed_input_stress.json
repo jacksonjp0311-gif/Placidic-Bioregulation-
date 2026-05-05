@@ -1,0 +1,11 @@
+{
+  "domain_id": "malformed_input_stress",
+  "family": "malformed_input_stress",
+  "stress_type": "malformed_input",
+  "secondary_regimes": [
+    "stress_domain"
+  ],
+  "unsafe": true,
+  "stress": true,
+  "description": "Intentionally malformed stress domain missing primary_regime."
+}

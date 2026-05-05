@@ -1,0 +1,22 @@
+{
+  "version": "PBSA-StressValidationSuite-v2.3",
+  "suite_id": "stress_validation_suite_v2_3",
+  "description": "Stress/adversarial suite for PBSA v2.3 safe-fail route validation.",
+  "stress_domain_configs": [
+    "configs/stress_domains/noise_pressure_stress.json",
+    "configs/stress_domains/contradictory_regime_stress.json",
+    "configs/stress_domains/malformed_input_stress.json",
+    "configs/stress_domains/boundary_case_stress.json",
+    "configs/stress_domains/ambiguous_overlay_stress.json",
+    "configs/stress_domains/overlay_overload_stress.json"
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "stress_validation_is_biological_validation": false,
+  "stress_validation_is_medical_safety": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

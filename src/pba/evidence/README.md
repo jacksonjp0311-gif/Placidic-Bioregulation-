@@ -91,3 +91,10 @@ Added:
 - external_validation_report.py
 
 The report emits internal advantage, external advantage, advantage drift, preservation drift, route frequency drift, and external failure surface.
+
+## PBSA v2.3 stress validation report
+
+Added:
+- stress_validation_report.py
+
+The report emits safe-fail score, crash rate, stress advantage drift, stress failure surface, and no automatic replacement.
