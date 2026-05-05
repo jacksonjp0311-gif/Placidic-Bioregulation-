@@ -43,3 +43,12 @@ Added:
 - candidate_readiness.py
 
 Candidate specs are plans, not executable controllers. Candidate execution remains disabled in v1.3.
+
+## PBSA v1.4 champion/challenger governance
+
+Added:
+- candidate_variants.py
+- champion_challenger_runner.py
+- promotion_governance.py
+
+Candidate execution is not promotion. Candidate routes run only inside comparison reports.

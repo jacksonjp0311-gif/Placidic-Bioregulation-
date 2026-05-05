@@ -36,3 +36,8 @@ python -m pba.cli run-suite --config .\configs\suite_v1_0.json
 Added:
 - python -m pba.cli summarize-holdout
 - python -m pba.cli candidate-readiness
+
+## PBSA v1.4 CLI command
+
+Added:
+- python -m pba.cli champion-challenger-report

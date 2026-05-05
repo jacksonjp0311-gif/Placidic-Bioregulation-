@@ -1,21 +1,21 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.3
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.4
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository  
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
-Package version: 0.4.0  
-Current software architecture: PBSA v1.3 - Holdout Domain Expansion and Candidate Readiness  
+Package version: 0.5.0  
+Current software architecture: PBSA v1.4 - Holdout Domain Expansion and Candidate Readiness  
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
 Current decision: preserve_champion  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 27 passing  
-Candidate execution: disabled  
+Current tests: 36 passing  
+Candidate execution: comparison harness only  
 Kernel mutation: disabled  
-Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance  
+Next target: PBSA v2.0 - Regime-Routed PBSA or Manual Review  
 
 ---
 
@@ -23,23 +23,23 @@ Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v1.3 | implemented and pushed |
+| Software architecture | PBSA v1.4 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 0.4.0 | active |
-| Test suite | 27 passing | active |
+| Python package | 0.5.0 | active |
+| Test suite | 36 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Evolution decision | preserve_champion | active |
 | Candidate execution | disabled | active |
 | Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v1.4 | champion/challenger execution and promotion governance |
+| Next planned layer | PBSA v2.0 | regime-routed PBSA or manual review |
 
 ## Current architecture status
 
-PBSA v1.3 is a holdout-expansion and candidate-readiness layer. It builds on PBSA v1.2 multi-label regime detection by adding holdout domains, a holdout suite, holdout summaries, regime coverage reporting, candidate specifications, and candidate-readiness reporting.
+PBSA v1.4 is a holdout-expansion and candidate-readiness layer. It builds on PBSA v1.2 multi-label regime detection by adding holdout domains, a holdout suite, holdout summaries, regime coverage reporting, candidate specifications, and candidate-readiness reporting.
 
-PBSA v1.3 does not replace the PBA kernel. Candidate specs are plans, not executable controllers. The current champion kernel remains preserved until a future candidate passes original-suite comparison, holdout-suite comparison, baseline comparison, evolution reporting, decision-ledger checks, non-claim lock verification, and RCC documentation checks.
+PBSA v1.4 does not replace the PBA kernel. Candidate specs are plans, not executable controllers. The current champion kernel remains preserved until a future candidate passes original-suite comparison, holdout-suite comparison, baseline comparison, evolution reporting, decision-ledger checks, non-claim lock verification, and RCC documentation checks.
 
 ---
 
@@ -47,7 +47,7 @@ PBSA v1.3 does not replace the PBA kernel. Candidate specs are plans, not execut
 
 ## Executive summary
 
-Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.3: a conservative evidence-producing architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions.
+Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.4: a conservative evidence-producing architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions.
 
 The repository is designed to be honest before it is impressive. It runs tests, executes benchmark domains, compares PBA against baseline controllers, emits metrics, checks identifiability, classifies runs, aggregates suite-level evidence, runs holdout evaluation, generates candidate-readiness reports, and preserves non-claim boundaries.
 
@@ -214,9 +214,9 @@ Remote:
 
 Current published status:
 
-- PBSA v1.3 holdout and candidate-readiness layer added.
+- PBSA v1.4 holdout and candidate-readiness layer added.
 - PBA v1.4 theory/governance docs archived.
-- Package version: 0.4.0.
+- Package version: 0.5.0.
 - 27 tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
@@ -224,7 +224,7 @@ Current published status:
 - Latest candidate-readiness report generated.
 - Candidate spec count: 4.
 - Current decision: preserve_champion.
-- Candidate execution: disabled.
+- Candidate execution: comparison harness only.
 - Kernel replacement: disabled by default.
 - Next target: PBSA v1.4 champion/challenger execution and promotion governance.
 
@@ -255,10 +255,10 @@ Current canonical versions:
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
 - current tests: 27 passing
-- candidate execution allowed: false
+- candidate execution allowed: comparison harness only
 - kernel mutation allowed: false
 - current docs archive: docs/theory and docs/architecture
-- next target: PBSA v1.4 champion/challenger execution and promotion governance
+- next target: PBSA v2.0 regime-routed PBSA or manual review
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, candidate-readiness reports, docs/theory, docs/architecture, or evolution reports change.
 
@@ -321,7 +321,7 @@ PBSA requires the following before any benchmark interpretation:
 
 domain config -> parameter manifest -> perturbations -> calibration -> PBA kernel -> baselines -> metrics -> identifiability -> classification -> evidence package -> ledger -> suite summary -> report
 
-## PBSA v1.3 holdout/candidate chain
+## PBSA v1.4 holdout/candidate chain
 
 holdout domain config -> holdout suite -> holdout runs -> holdout summary -> regime coverage matrix -> candidate specs -> candidate-readiness report -> preserve_champion
 
@@ -445,10 +445,38 @@ Cleaned stale PBSA v1.1 labels from PBSA v1.2 configuration and evolution surfac
 
 Important lock: no kernel mutation occurred.
 
-## PBSA v1.3 Holdout and Candidate Readiness Upgrade
+## PBSA v1.4 Holdout and Candidate Readiness Upgrade
 
 Added four holdout domain configs, suite_holdout_v1_3.json, holdout summary generation, regime coverage matrix, candidate specification schema, candidate-readiness report, CLI commands for holdout/readiness, docs archive, implementation map, and RCC mini README synchronization.
 
-Important lock: PBSA v1.3 broadens evidence only. Candidate specs are not executable controllers. Candidate execution remains disabled.
+Important lock: PBSA v1.4 broadens evidence only. Candidate specs are not executable controllers. Candidate execution is allowed only inside comparison harnesses.
 
 Next target: PBSA v1.4 champion/challenger execution and promotion governance.
+
+## PBSA v1.4 Champion/Challenger Governance Upgrade
+
+This repository now includes the PBSA v1.4 champion/challenger execution layer.
+
+Added surfaces:
+- candidate route configs
+- executable comparison-harness challenger variants
+- champion/challenger runner
+- promotion governance taxonomy
+- champion/challenger report generator
+- CLI command for champion/challenger reporting
+- docs/theory PBSA v1.4 archive
+- docs/architecture PBSA v1.4 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- Candidate execution is not promotion.
+- Candidate execution is allowed only inside comparison harnesses.
+- Automatic kernel replacement remains disabled.
+- The current PBA kernel is not automatically replaced.
+- Candidate improvement is not biological proof or medical validation.
+
+Command:
+    python -m pba.cli champion-challenger-report
+
+Next target:
+- PBSA v2.0 regime-routed PBSA or manual review

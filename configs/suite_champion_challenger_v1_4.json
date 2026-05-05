@@ -1,0 +1,17 @@
+{
+  "version": "PBSA-ChampionChallengerSuite-v1.4",
+  "description": "PBSA v1.4 champion/challenger comparison declaration. Candidate execution is allowed only inside comparison reports. Automatic kernel replacement is forbidden.",
+  "original_suite": "configs/suite_v1_0.json",
+  "holdout_suite": "configs/suite_holdout_v1_3.json",
+  "candidate_configs": [
+    "configs/candidates/direct_route_candidate_v0.json",
+    "configs/candidates/pulse_route_candidate_v0.json",
+    "configs/candidates/oscillatory_preservation_candidate_v0.json",
+    "configs/candidates/noisy_recovery_guard_candidate_v0.json"
+  ],
+  "candidate_execution_allowed": true,
+  "candidate_execution_scope": "comparison_harness_only",
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "non_claim_boundary": "computational champion/challenger comparison only; not biological validation"
+}

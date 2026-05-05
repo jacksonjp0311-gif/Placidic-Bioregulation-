@@ -63,3 +63,9 @@ holdout_summary.py generates:
 - candidate readiness preconditions
 
 Holdout evidence is computational only and does not validate biological claims.
+
+## PBSA v1.4 champion/challenger report
+
+Added champion_challenger_report.py.
+
+The report compares candidate routes against the champion across original and holdout evidence while preserving baseline visibility, non-claim locks, and RCC boundaries.

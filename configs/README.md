@@ -64,3 +64,9 @@ Added:
 - configs/suite_holdout_v1_3.json
 
 These are computational toy holdout domains only. They are not biological systems.
+
+## PBSA v1.4 candidate configs
+
+Added configs/candidates/*.json for candidate routes.
+
+Candidate execution is allowed only inside comparison harnesses. Automatic promotion and kernel replacement are forbidden.

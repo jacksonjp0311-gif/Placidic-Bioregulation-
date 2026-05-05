@@ -1,0 +1,17 @@
+{
+  "candidate_id": "oscillatory_preservation_candidate_v0",
+  "version": "PBSA-v1.4",
+  "target_regimes": [
+    "oscillatory"
+  ],
+  "route_type": "oscillatory_preservation",
+  "status": "executable_in_comparison_harness_only",
+  "candidate_execution_allowed": true,
+  "automatic_promotion_allowed": false,
+  "kernel_replacement_allowed": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

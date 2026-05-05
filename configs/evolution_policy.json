@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v1.3",
+  "version": "PBSA-EvolutionPolicy-v1.4",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -13,7 +13,12 @@
     "decision_ledger_required": true,
     "holdout_summary_required": true,
     "candidate_readiness_report_required": true,
-    "candidate_execution_disabled_in_v1_3": true
+    "candidate_execution_disabled_in_v1_3": true,
+    "champion_challenger_report_required": true,
+    "original_suite_comparison_required": true,
+    "holdout_suite_comparison_required": true,
+    "baseline_visibility_required": true,
+    "automatic_replacement_forbidden": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -40,6 +45,9 @@
   "diagnostic_schema": "multi_label_regime_detection",
   "rcc_sync_required": true,
   "holdout_required_before_candidate_execution": true,
-  "candidate_execution_allowed": false,
-  "candidate_promotion_allowed": false
+  "candidate_execution_allowed": true,
+  "candidate_promotion_allowed": false,
+  "candidate_execution_scope": "comparison_harness_only",
+  "automatic_kernel_replacement_allowed": false,
+  "promotion_requires_manual_review": true
 }

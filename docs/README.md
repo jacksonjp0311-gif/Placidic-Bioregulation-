@@ -60,3 +60,9 @@ PBSA v1.2 upgrades diagnostic resolution by separating primary regimes from seco
 Added:
 - docs/theory/pbsa_v1_3_holdout_candidate_readiness.md
 - docs/architecture/pbsa_v1_3_implementation_map.md
+
+## PBSA v1.4 documentation archive
+
+Added:
+- docs/theory/pbsa_v1_4_champion_challenger_governance.md
+- docs/architecture/pbsa_v1_4_implementation_map.md

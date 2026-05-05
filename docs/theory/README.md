@@ -57,3 +57,8 @@ Added:
 - pbsa_v1_3_holdout_candidate_readiness.md
 
 This document defines holdout expansion and candidate readiness without kernel replacement.
+
+## PBSA v1.4 theory addition
+
+Added:
+- pbsa_v1_4_champion_challenger_governance.md
