@@ -77,3 +77,10 @@ Added:
 - configs/routing/regime_route_policy_v2_0.json
 
 This policy selects baseline, champion, candidate, or reject routes under evidence gates.
+
+## PBSA v2.1 validation config
+
+Added:
+- configs/validation/routed_validation_policy_v2_1.json
+
+This config compares routed PBSA against champion-only, baseline-only, candidate-only, and reject/manual-review controls.

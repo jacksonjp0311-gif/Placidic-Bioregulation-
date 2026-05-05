@@ -46,3 +46,8 @@ Added:
 
 Added:
 - python -m pba.cli routed-suite-report
+
+## PBSA v2.1 CLI command
+
+Added:
+- python -m pba.cli routed-validation-report

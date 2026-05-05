@@ -72,3 +72,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_0_regime_routed_pbsa.md
 - docs/architecture/pbsa_v2_0_implementation_map.md
+
+## PBSA v2.1 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_1_routed_suite_validation.md
+- docs/architecture/pbsa_v2_1_implementation_map.md

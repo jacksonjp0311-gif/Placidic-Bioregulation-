@@ -77,3 +77,10 @@ Added:
 - routed_suite_report.py
 
 Route evidence explains why a route was selected and preserves non-claim boundaries.
+
+## PBSA v2.1 routed validation report
+
+Added:
+- routed_validation_report.py
+
+The report emits routed advantage, route preservation score, best control policy, and route failure surface.

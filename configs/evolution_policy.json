@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.0",
+  "version": "PBSA-EvolutionPolicy-v2.1",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -21,7 +21,11 @@
     "automatic_replacement_forbidden": true,
     "route_policy_required": true,
     "route_evidence_required": true,
-    "routed_suite_report_required": true
+    "routed_suite_report_required": true,
+    "routed_validation_report_required": true,
+    "route_advantage_required": true,
+    "route_preservation_score_required": true,
+    "route_failure_surface_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -53,7 +57,9 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "regime_routed_pbsa",
+  "architecture_mode": "routed_suite_validation",
   "global_decision": "route_by_regime",
-  "routing_is_global_replacement": false
+  "routing_is_global_replacement": false,
+  "validation_decision_required": true,
+  "routed_validation_is_biological_validation": false
 }

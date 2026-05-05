@@ -67,3 +67,8 @@ Added:
 
 Added:
 - pbsa_v2_0_regime_routed_pbsa.md
+
+## PBSA v2.1 theory addition
+
+Added:
+- pbsa_v2_1_routed_suite_validation.md

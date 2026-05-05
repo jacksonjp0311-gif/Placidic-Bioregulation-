@@ -1,0 +1,27 @@
+{
+  "version": "PBSA-ValidationPolicy-v2.1",
+  "policy_id": "routed_validation_policy_v2_1",
+  "description": "PBSA v2.1 routed-suite validation policy. Compares routed policy against champion-only, baseline-only, candidate-only, and reject/manual-review controls.",
+  "route_policy": "regime_route_policy_v2_0",
+  "suite_scope": [
+    "original_suite",
+    "holdout_suite"
+  ],
+  "control_policies": [
+    "champion_only",
+    "baseline_only",
+    "candidate_only",
+    "reject_manual_review"
+  ],
+  "primary_metric": "cumulative_deviation_proxy",
+  "lower_is_better": true,
+  "preservation_epsilon": 1e-06,
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "routed_validation_is_biological_validation": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}
