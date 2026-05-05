@@ -12,7 +12,7 @@ Current software architecture: PBSA v1.2 - Multi-Label Regime Detection and RCC 
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
 Current decision: preserve_champion
 Current suite classification: PBA-C
-Current tests: 20 passing
+Current tests: 21 passing
 Next target: PBSA v1.3 - Holdout Domain Expansion and Candidate Evaluation Readiness
 
 ---
@@ -24,7 +24,7 @@ Next target: PBSA v1.3 - Holdout Domain Expansion and Candidate Evaluation Readi
 | Software architecture | PBSA v1.2 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
 | Python package | 0.3.0 | active |
-| Test suite | 20 passing | active |
+| Test suite | 21 passing | active |
 | Evolution decision | preserve_champion | active |
 | Overall suite classification | PBA-C | active |
 | RCC documentation contract | passing | active |
@@ -220,7 +220,7 @@ Current canonical versions:
 - package version: 0.3.0
 - current decision: preserve_champion
 - current suite classification: PBA-C
-- current tests: 20 passing
+- current tests: 21 passing
 - current docs archive: docs/theory and docs/architecture
 - next target: PBSA v1.3 holdout domain expansion and candidate evaluation readiness
 
