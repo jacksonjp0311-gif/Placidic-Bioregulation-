@@ -44,3 +44,7 @@ preserve_champion
 ## Kernel mutation
 
 Disabled. PBSA v1.2 improves diagnostics only.
+
+## PBSA v1.2.1 RCC cleanup note
+
+PBSA v1.2.1 cleaned stale v1.1 labels from evolution policy, holdout config, evolution README, and candidate-summary text. This was an RCC/version-ledger cleanup only. It did not mutate the PBA kernel.

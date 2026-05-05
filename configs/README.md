@@ -47,3 +47,9 @@ python -m pba.cli run-suite --config .\configs\suite_v1_0.json
 - evolution_policy.json declares diagnostic-first rules.
 - suite_holdout_v1_0.json is a holdout/repeat-suite placeholder until new domains are added.
 - Kernel mutation is disabled by default.
+
+## PBSA v1.2 policy drift cleanup
+
+- evolution_policy.json now declares PBSA-EvolutionPolicy-v1.2.
+- suite_holdout_v1_0.json now references PBSA v1.2 diagnostic schema.
+- Kernel mutation remains disabled by default.

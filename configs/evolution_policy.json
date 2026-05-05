@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v1.1",
+  "version": "PBSA-EvolutionPolicy-v1.2",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -33,5 +33,7 @@
       "single_run_hype",
       "readme_polish_as_evidence"
     ]
-  }
+  },
+  "diagnostic_schema": "multi_label_regime_detection",
+  "rcc_sync_required": true
 }

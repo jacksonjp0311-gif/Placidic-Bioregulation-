@@ -434,3 +434,16 @@ Expected current interpretation:
 
 Next target:
 - PBSA v1.3 holdout domain expansion and candidate evaluation readiness
+
+## PBSA v1.2.1 RCC Version Drift Cleanup
+
+This maintenance pass cleaned stale PBSA v1.1 labels from PBSA v1.2 configuration and evolution surfaces.
+
+Updated:
+- configs/evolution_policy.json
+- configs/suite_holdout_v1_0.json
+- src/pba/evolution/README.md
+- src/pba/evolution/kernel_candidate.py
+- latest evolution report after regeneration
+
+No kernel mutation occurred. Current decision remains preserve_champion.

@@ -2,16 +2,16 @@
 
 ## Purpose
 
-PBSA v1.1 diagnostic evolution scaffolding.
+PBSA v1.2 diagnostic evolution scaffolding.
 
 ## S - Formal specification
 
-This folder contains policy and champion/challenger scaffolding for future kernel evolution. PBSA v1.1 is diagnostic-first and must not silently replace the current PBA kernel.
+This folder contains policy and champion/challenger scaffolding for future kernel evolution. PBSA v1.2 is diagnostic-first and must not silently replace the current PBA kernel.
 
 ## H - Hooks
 
 - Reads suite summaries from reports/suite_summaries.
-- Uses regime detection from src/pba/evaluation.
+- Uses multi-label regime detection from src/pba/evaluation.
 - Uses evolution reports from src/pba/evidence.
 - Uses configs/evolution_policy.json.
 
@@ -23,12 +23,13 @@ This folder contains policy and champion/challenger scaffolding for future kerne
 
 ## T - Theory
 
-Placidity is regime-conditioned. Baseline wins are diagnostic evidence, not embarrassment.
+Placidity is regime-conditioned. Baseline wins are diagnostic evidence, not embarrassment. PBSA v1.2 preserves primary regime plus secondary overlays.
 
 ## I - Invariants
 
 - Current kernel remains champion.
 - No kernel replacement without tests, suite evidence, baseline comparison, evolution report, and non-claim locks.
+- Multi-label diagnosis must not mutate the PBA kernel.
 - No medical, clinical, mechanism, or biological-law claim.
 
 ## E - Example

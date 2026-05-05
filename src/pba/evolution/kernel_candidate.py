@@ -33,7 +33,7 @@ def propose_candidate(suite_summary: dict, regime_map: dict, baseline_advantage_
         "candidate_kernel": None,
         "mode": "diagnostic_first",
         "kernel_mutation_allowed": False,
-        "summary": "No kernel replacement in PBSA v1.1 diagnostic phase.",
+        "summary": "No kernel replacement in PBSA v1.2 multi-label diagnostic phase.",
         "motivation": suite_summary.get("overall_summary", "Suite evidence requires diagnostic interpretation."),
         "recommendations": recommendations,
         "files_changed": [],
