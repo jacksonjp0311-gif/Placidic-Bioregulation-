@@ -22,6 +22,7 @@ def main() -> int:
 
     rs = sub.add_parser("run-suite")
     rs.add_argument("--config", default="configs/suite_v1_0.json")
+    rs.add_argument("--no-summary", action="store_true")
 
     ce = sub.add_parser("compile-evidence")
     ce.add_argument("--run", required=True)
@@ -35,8 +36,14 @@ def main() -> int:
         return 0
 
     if args.cmd == "run-suite":
-        run_dirs = run_suite(root, args.config)
-        print(json.dumps({"status": "complete", "runs": run_dirs}, indent=2))
+        result = run_suite(root, args.config, compile_summary=not args.no_summary)
+        print(json.dumps({
+            "status": "complete",
+            "runs": result["runs"],
+            "suite_summary_json": result["suite_summary_json"],
+            "suite_summary_md": result["suite_summary_md"],
+            "overall_classification": result["overall_classification"]
+        }, indent=2))
         return 0
 
     if args.cmd == "compile-evidence":

@@ -3,5 +3,5 @@ from pathlib import Path
 import json
 
 root = Path.cwd()
-runs = run_suite(root, root / "configs" / "suite_v1_0.json")
-print(json.dumps({"runs": runs}, indent=2))
+result = run_suite(root, root / "configs" / "suite_v1_0.json", compile_summary=True)
+print(json.dumps(result, indent=2))
