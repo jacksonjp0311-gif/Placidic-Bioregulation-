@@ -328,3 +328,22 @@ Important lock:
 Commands:
     python -m pba.cli diagnose-evolution
     python -m pba.cli compare-kernels
+
+## Docs and theory archive
+
+Canonical documentation has been added under docs/theory and docs/architecture.
+
+Important files:
+
+- docs/theory/pba_v1_4_evidence_feedback_regime_aware_placidity.md
+- docs/theory/pbsa_v1_1_diagnostic_evidence_feedback_rcc_architecture.md
+- docs/architecture/pbsa_v1_1_implementation_map.md
+- docs/benchmark_protocol/evolution_acceptance_policy.md
+
+Current PBSA v1.1 status:
+
+- tests: 18 passing
+- decision: preserve_champion
+- overall classification: PBA-C
+- kernel replacement: disabled by default
+- next target: multi-label regime detection

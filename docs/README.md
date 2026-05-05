@@ -32,3 +32,16 @@ PBSA converts PBA into executable software accountability. RCC converts document
 ## E - Example
 
 Read docs/architecture/rcc_context_map.md before modifying folders.
+
+## PBSA v1.1 / PBA v1.4 theory and architecture documents
+
+The docs folder now includes the canonical PBSA v1.1 and PBA v1.4 documentation surfaces.
+
+Key files:
+
+- docs/theory/pba_v1_4_evidence_feedback_regime_aware_placidity.md
+- docs/theory/pbsa_v1_1_diagnostic_evidence_feedback_rcc_architecture.md
+- docs/architecture/pbsa_v1_1_implementation_map.md
+- docs/benchmark_protocol/evolution_acceptance_policy.md
+
+These files document the diagnostic-first evidence-feedback layer, RCC merger, regime detection, baseline-win preservation, evolution reports, and the preserve_champion decision.

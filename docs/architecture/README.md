@@ -30,3 +30,11 @@ Architecture is the bridge between theory and runnable repository structure.
 ## E - Example
 
 An AI agent should read rcc_context_map.md before editing src/pba.
+
+## PBSA v1.1 implementation map
+
+Added:
+
+- pbsa_v1_1_implementation_map.md
+
+This file maps architecture objects to implemented repo files and records the next upgrade target: multi-label regime detection.
