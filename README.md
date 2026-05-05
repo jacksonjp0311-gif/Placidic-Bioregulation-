@@ -75,7 +75,7 @@ The project moved through a full evidence loop:
 
 theory -> executable software -> tests -> benchmark evidence -> downgrade -> multi-label diagnosis -> holdout expansion -> candidate readiness -> champion/challenger comparison -> regime routing.
 
-The important current result is not â€œPBA wins everywhere.â€ The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
+The important current result is not Ã¢â‚¬Å“PBA wins everywhere.Ã¢â‚¬Â The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
 
 ## Current finding
 
@@ -324,6 +324,19 @@ Before future pushes, verify:
 - no medical or biological-law claim entered the docs.
 
 ---
+
+
+## RCC Compatibility Anchors
+
+This section preserves stable README anchors required by the executable RCC documentation contract.
+
+- Current benchmark results: see the benchmark and routing evidence section above.
+- Human README: see PART I - Human README.
+- AI README: see PART II - AI / Agent README.
+- Quick start: see the Quick start section.
+- Repository map for humans: see the repository map section.
+- Required local verification: see the AI verification section.
+- PBSA v2.0 routing chain: domain -> primary regime -> secondary overlays -> route eligibility -> route selection -> route evidence -> route ledger -> routed suite report -> RCC refresh.
 
 # PART II - AI / Agent README
 
