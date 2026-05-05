@@ -4,16 +4,18 @@ Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.3
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
-Status: GitHub-published research repository
-GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-
-GitHub push: performed
-Package version: 0.4.0
-Current software architecture: PBSA v1.3 - Holdout Domain Expansion and Candidate Readiness
-Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
-Current decision: preserve_champion
-Current suite classification: PBA-C
-Current tests: 27 passing
-Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance
+Status: GitHub-published research repository  
+GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
+Package version: 0.4.0  
+Current software architecture: PBSA v1.3 - Holdout Domain Expansion and Candidate Readiness  
+Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
+Current decision: preserve_champion  
+Original suite classification: PBA-C  
+Holdout suite classification: PBA-D  
+Current tests: 27 passing  
+Candidate execution: disabled  
+Kernel mutation: disabled  
+Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance  
 
 ---
 
@@ -25,82 +27,66 @@ Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
 | Python package | 0.4.0 | active |
 | Test suite | 27 passing | active |
+| Original suite classification | PBA-C | active |
+| Holdout suite classification | PBA-D | active |
 | Evolution decision | preserve_champion | active |
-| Overall suite classification | PBA-C | active |
+| Candidate execution | disabled | active |
+| Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
 | Next planned layer | PBSA v1.4 | champion/challenger execution and promotion governance |
 
 ## Current architecture status
 
-PBSA v1.1 is a diagnostic-first evidence-feedback layer. It adds regime detection, baseline advantage mapping, evolution policy, evolution reports, and champion/challenger scaffolding. It does not automatically replace the current PBA kernel.
+PBSA v1.3 is a holdout-expansion and candidate-readiness layer. It builds on PBSA v1.2 multi-label regime detection by adding holdout domains, a holdout suite, holdout summaries, regime coverage reporting, candidate specifications, and candidate-readiness reporting.
 
-The current champion kernel remains preserved until a future candidate passes tests, suite comparison, baseline comparison, evolution reporting, decision ledger checks, non-claim lock verification, and holdout or repeat-suite evidence where available.
+PBSA v1.3 does not replace the PBA kernel. Candidate specs are plans, not executable controllers. The current champion kernel remains preserved until a future candidate passes original-suite comparison, holdout-suite comparison, baseline comparison, evolution reporting, decision-ledger checks, non-claim lock verification, and RCC documentation checks.
+
+---
 
 # PART I - Human README
 
 ## Executive summary
 
-Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.1: a diagnostic evidence-feedback software architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions, preserving RCC context surfaces, and generating evolution reports without automatically replacing the champion kernel.
+Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.3: a conservative evidence-producing architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions.
 
-The repository is designed to be honest before it is impressive. It runs tests, executes benchmark domains, compares PBA against baseline controllers, emits metrics, checks identifiability, classifies each run, aggregates suite-level evidence, and preserves non-claim boundaries.
+The repository is designed to be honest before it is impressive. It runs tests, executes benchmark domains, compares PBA against baseline controllers, emits metrics, checks identifiability, classifies runs, aggregates suite-level evidence, runs holdout evaluation, generates candidate-readiness reports, and preserves non-claim boundaries.
 
 ## Current finding
 
-Latest overall suite classification:
+The current evidence state is mixed and conservative.
 
-PBA-C
+Original suite:
 
-Latest conclusion:
+- Overall classification: PBA-C
+- PBA wins in one declared toy domain.
+- A simpler proportional baseline performs better in two declared domains.
 
-The current suite result is honest mixed evidence. PBA wins in at least one declared toy domain, but a simpler proportional baseline performs better in at least one declared domain. This supports local implementation usefulness under specific perturbation geometry, not broad biological or medical claims.
+Holdout suite:
 
-Suite summary:
+- Overall classification: PBA-D
+- The holdout run broadened the evidence surface and showed weak generalization.
+- This supports candidate readiness, not candidate promotion.
 
-Mixed suite evidence: PBA wins in at least one domain, but simpler baselines perform equally well or better in at least one domain.
+Current conclusion:
+
+The system is working because it downgraded itself. PBSA did not hide baseline wins, did not promote the kernel, and did not inflate holdout evidence. The correct current decision remains preserve_champion.
 
 ## Current benchmark results
 
-Latest suite summary files:
+Original suite summary:
 
-- JSON: C:\Users\jacks\OneDrive\Desktop\Placidic Bioregulation\reports\suite_summaries\suite_v1_0_20260505T130602_845599Z\suite_summary.json
-- Markdown: C:\Users\jacks\OneDrive\Desktop\Placidic Bioregulation\reports\suite_summaries\suite_v1_0_20260505T130602_845599Z\suite_summary.md
-- Folder: C:\Users\jacks\OneDrive\Desktop\Placidic Bioregulation\reports\suite_summaries\suite_v1_0_20260505T130602_845599Z
-
-Benchmark artifact locations:
-
-- Individual benchmark runs: runs
-- Suite summaries: reports/suite_summaries
-- Runtime ledgers: ledgers
-- Evidence package per run: runs/run_*/evidence_package.json
-- Per-run classification: runs/run_*/classification.json
-- Per-run metric comparison: runs/run_*/metric_comparison.json
-- Per-run benchmark summary: runs/run_*/benchmark_summary.md
-
-Current suite counts:
-
+- Latest known original suite folder: reports/suite_summaries/suite_v1_0_20260505T130602_845599Z
 - Run count: 3
 - PBA-A: 1
 - PBA-B: 0
 - PBA-C: 2
 - PBA-D: 0
 - PBA-E: 0
-
-Advantage counts:
-
 - PBA advantage count: 1
 - Baseline advantage count: 2
-- Tie count: 0
+- Best baseline frequency: proportional_feedback in 3/3 domains
 
-Mean scores:
-
-- Mean PBA score: 14.299374654563454
-- Mean best baseline score: 13.680448760953002
-
-Best baseline frequency:
-
-{"proportional_feedback":3}
-
-Domain-level result table:
+Original suite domain-level result table:
 
 | Domain | Classification | Result | PBA score | Best baseline | Best baseline score | Identifiability |
 |---|---:|---|---:|---|---:|---|
@@ -108,18 +94,39 @@ Domain-level result table:
 | pulse_recovery | PBA-C | baseline_advantage | 12.891225613932782 | proportional_feedback | 9.86217943228449 | stable |
 | oscillatory_signal | PBA-A | pba_advantage | 15.904470919331928 | proportional_feedback | 19.08082141099768 | stable |
 
+Holdout suite:
+
+- Suite config: configs/suite_holdout_v1_3.json
+- Latest holdout summary: reports/holdout/latest_holdout_summary.json
+- Latest candidate-readiness report: reports/candidates/latest_candidate_readiness_report.json
+- Holdout run count: 4
+- Holdout overall classification: PBA-D
+- Candidate spec count: 4
+- Candidate execution allowed: false
+- Kernel mutation allowed: false
+
+Candidate specs generated:
+
+- direct_route_candidate_v0
+- pulse_route_candidate_v0
+- oscillatory_preservation_candidate_v0
+- noisy_recovery_guard_candidate_v0
+
 ## How to interpret the current result
 
-A PBA-C suite result is not a crash and not a failure of the framework. It means the evidence system is working conservatively.
+A PBA-C original-suite result and PBA-D holdout result are not crashes. They mean the evidence system is doing its job.
 
-In the current evidence state, PBA shows advantage in one declared domain, while a simpler proportional feedback baseline performs better in two declared domains. That means the current PBA kernel is not universally superior across the toy suite. The correct conclusion is bounded:
+The correct interpretation is:
 
 - PBSA implementation is working.
+- Tests are passing.
 - Evidence generation is working.
-- The downgrade system is working.
-- PBA has local advantage in a specific perturbation geometry.
-- Simpler baselines remain stronger in other declared geometries.
-- Further kernel tuning or domain-specific calibration is required before stronger claims.
+- Original-suite downgrade is preserved.
+- Holdout evaluation found weak generalization.
+- Candidate specs are justified as next-step plans.
+- Candidate execution is not yet justified.
+- Stronger claims are not justified.
+- The next valid step is champion/challenger execution under PBSA v1.4.
 
 ## What this project is
 
@@ -128,6 +135,8 @@ In the current evidence state, PBA shows advantage in one declared domain, while
 - A baseline-comparison system.
 - A calibration and identifiability scaffold.
 - A suite-level evidence aggregator.
+- A holdout evaluation layer.
+- A candidate-readiness layer.
 - A repository organized for human and AI readability using RCC-style mini READMEs.
 
 ## What this project is not
@@ -139,6 +148,7 @@ In the current evidence state, PBA shows advantage in one declared domain, while
 - Not a universal biological law claim.
 - Not proof that Delta Phi governs living systems.
 - Not permission to treat toy benchmark results as biological evidence.
+- Not permission to promote candidate specs into active controllers.
 - Do not treat benchmark success as biological validation.
 
 ## Quick start
@@ -155,9 +165,25 @@ Run one benchmark:
 
     python -m pba.cli run-benchmark --domain .\configs\domains\temperature_like.json
 
-Run the full suite:
+Run the original suite:
 
     python -m pba.cli run-suite --config .\configs\suite_v1_0.json
+
+Run the holdout suite:
+
+    python -m pba.cli run-suite --config .\configs\suite_holdout_v1_3.json
+
+Generate holdout summary:
+
+    python -m pba.cli summarize-holdout
+
+Generate candidate-readiness report:
+
+    python -m pba.cli candidate-readiness
+
+Generate evolution report:
+
+    python -m pba.cli diagnose-evolution
 
 Run the local automation script:
 
@@ -169,12 +195,12 @@ Dump the repo structure:
 
 ## Repository map for humans
 
-- configs: declared suite, domains, parameters, baseline settings, calibration grid, and metrics.
+- configs: declared suite, domains, holdout domains, parameters, baseline settings, calibration grid, and metrics.
 - docs: theory, architecture, RCC context map, and benchmark protocol.
 - src/pba: Python implementation.
 - tests: unit tests and RCC README coverage checks.
 - runs: generated benchmark run artifacts.
-- reports: generated suite summaries.
+- reports: generated suite summaries, holdout summaries, candidate-readiness reports, and evolution reports.
 - ledgers: local runtime and decision continuity records.
 - scripts: local helper scripts.
 
@@ -188,20 +214,27 @@ Remote:
 
 Current published status:
 
-- PBSA v1.1 diagnostic evidence-feedback layer added.
+- PBSA v1.3 holdout and candidate-readiness layer added.
 - PBA v1.4 theory/governance docs archived.
-- 18 tests passing.
-- Latest evolution report generated.
+- Package version: 0.4.0.
+- 27 tests passing.
+- Original suite classification: PBA-C.
+- Holdout suite classification: PBA-D.
+- Latest holdout summary generated.
+- Latest candidate-readiness report generated.
+- Candidate spec count: 4.
 - Current decision: preserve_champion.
-- Overall suite classification: PBA-C.
+- Candidate execution: disabled.
 - Kernel replacement: disabled by default.
-- Next target: PBSA v1.2 multi-label regime detection.
+- Next target: PBSA v1.4 champion/challenger execution and promotion governance.
 
 Before future pushes, verify:
 
 - tests pass,
-- suite summary exists,
-- evolution report exists if diagnostics changed,
+- original suite summary exists,
+- holdout summary exists if holdout behavior changed,
+- candidate-readiness report exists if candidate semantics changed,
+- evolution report exists if diagnostic semantics changed,
 - root README is current,
 - mini READMEs exist,
 - docs/theory and docs/architecture reflect current versioning,
@@ -219,12 +252,15 @@ Current canonical versions:
 - PBA_VERSION: PBA-v1.4
 - package version: 0.4.0
 - current decision: preserve_champion
-- current suite classification: PBA-C
+- original suite classification: PBA-C
+- holdout suite classification: PBA-D
 - current tests: 27 passing
+- candidate execution allowed: false
+- kernel mutation allowed: false
 - current docs archive: docs/theory and docs/architecture
 - next target: PBSA v1.4 champion/challenger execution and promotion governance
 
-AI agents must update this README when version constants, suite evidence, docs/theory, docs/architecture, or evolution reports change.
+AI agents must update this README when version constants, suite evidence, holdout evidence, candidate-readiness reports, docs/theory, docs/architecture, or evolution reports change.
 
 ## AI operating contract
 
@@ -277,11 +313,17 @@ PBSA requires the following before any benchmark interpretation:
 - per-run classification,
 - evidence package,
 - suite summary,
+- holdout summary when holdout behavior is discussed,
+- candidate-readiness report when candidate behavior is discussed,
 - non-claim boundary.
 
 ## Canonical runtime chain
 
 domain config -> parameter manifest -> perturbations -> calibration -> PBA kernel -> baselines -> metrics -> identifiability -> classification -> evidence package -> ledger -> suite summary -> report
+
+## PBSA v1.3 holdout/candidate chain
+
+holdout domain config -> holdout suite -> holdout runs -> holdout summary -> regime coverage matrix -> candidate specs -> candidate-readiness report -> preserve_champion
 
 ## AI file routing guide
 
@@ -291,8 +333,9 @@ Use this routing map before editing:
 - Modify src/pba/core only when changing PBA runtime primitives.
 - Modify src/pba/baselines only when changing comparators.
 - Modify src/pba/calibration only when changing parameter search.
-- Modify src/pba/evaluation only when changing metrics, identifiability, or classification.
-- Modify src/pba/evidence only when changing evidence package, reports, manifests, or suite summaries.
+- Modify src/pba/evaluation only when changing metrics, identifiability, classification, or regime diagnostics.
+- Modify src/pba/evidence only when changing evidence package, reports, manifests, suite summaries, or holdout summaries.
+- Modify src/pba/evolution only when changing candidate specs, candidate readiness, champion/challenger logic, or promotion governance.
 - Modify src/pba/benchmarks only when changing orchestration.
 - Modify src/pba/cli only when changing command-line behavior.
 - Modify tests whenever behavior changes.
@@ -310,19 +353,25 @@ Never claim or imply:
 - physical force,
 - proof that Delta Phi governs living systems,
 - proof from coherence alone,
-- proof from toy benchmarks alone.
+- proof from toy benchmarks alone,
+- proof from holdout performance alone,
+- proof from candidate readiness alone.
 
 ## AI interpretation of current evidence
 
-Current overall classification:
+Current original-suite classification:
 
 PBA-C
 
+Current holdout-suite classification:
+
+PBA-D
+
 Current evidence conclusion:
 
-The current suite result is honest mixed evidence. PBA wins in at least one declared toy domain, but a simpler proportional baseline performs better in at least one declared domain. This supports local implementation usefulness under specific perturbation geometry, not broad biological or medical claims.
+The current repository is functioning as a conservative research scaffold. PBA shows local advantage in one original-suite domain, loses to a simple proportional baseline in two original-suite domains, and does not yet generalize strongly under the v1.3 holdout suite. This supports candidate-readiness planning, not candidate execution or kernel promotion.
 
-AI agents must preserve this interpretation unless a newer suite_summary.json exists and is explicitly cited in the README update.
+AI agents must preserve this interpretation unless newer generated JSON artifacts exist and are explicitly used to update this README.
 
 ## AI modification rules
 
@@ -333,10 +382,12 @@ Before modifying code:
 3. Locate tests covering the behavior.
 4. Patch the smallest necessary surface.
 5. Run tests.
-6. Run suite if benchmark behavior changed.
-7. Update suite summary if suite changed.
-8. Update README evidence section only from generated JSON.
-9. Commit locally only unless push is explicitly requested.
+6. Run original suite if original benchmark behavior changed.
+7. Run holdout suite if holdout behavior changed.
+8. Generate holdout summary if holdout suite changed.
+9. Generate candidate-readiness report if candidate semantics changed.
+10. Update README evidence section only from generated JSON.
+11. Commit locally only unless push is explicitly requested.
 
 ## Required local verification
 
@@ -344,9 +395,15 @@ After any meaningful patch, run:
 
     python -m unittest discover -s tests
 
-If benchmark behavior changed, also run:
+If original benchmark behavior changed, also run:
 
     python -m pba.cli run-suite --config .\configs\suite_v1_0.json
+
+If holdout behavior changed, also run:
+
+    python -m pba.cli run-suite --config .\configs\suite_holdout_v1_3.json
+    python -m pba.cli summarize-holdout
+    python -m pba.cli candidate-readiness
 
 ## README maintenance rule
 
@@ -364,119 +421,34 @@ Update tests/test_rcc_readmes.py so the documentation contract remains executabl
 
 ## Final AI warning
 
-This repository is built to downgrade itself. Do not optimize documentation to sound stronger than the evidence. The correct behavior is to preserve mixed results, baseline wins, failure surfaces, and non-claim boundaries.
+This repository is built to downgrade itself. Do not optimize documentation to sound stronger than the evidence. The correct behavior is to preserve mixed results, baseline wins, failure surfaces, holdout weakness, candidate restrictions, and non-claim boundaries.
+
+---
+
+# Version history notes
 
 ## PBSA v1.1 Diagnostic Evidence Feedback Upgrade
 
-This repository now includes the PBSA v1.1 diagnostic-first evolution layer.
+Added regime detection, baseline advantage mapping, evolution policy, evolution reports, champion/challenger scaffolding, and RCC-aware continuity updates.
 
-Added surfaces:
-- regime detection
-- baseline advantage mapping
-- evolution policy
-- evolution reports
-- champion/challenger scaffolding
-- RCC-aware continuity updates
-
-Important lock:
-- PBSA v1.1 does not automatically replace the current PBA kernel.
-- The current kernel remains champion until a candidate passes tests, suite comparison, baseline comparison, evolution reporting, and non-claim lock checks.
-
-Commands:
-    python -m pba.cli diagnose-evolution
-    python -m pba.cli compare-kernels
-
-## Docs and theory archive
-
-Canonical documentation has been added under docs/theory and docs/architecture.
-
-Important files:
-
-- docs/theory/pba_v1_4_evidence_feedback_regime_aware_placidity.md
-- docs/theory/pbsa_v1_1_diagnostic_evidence_feedback_rcc_architecture.md
-- docs/architecture/pbsa_v1_1_implementation_map.md
-- docs/benchmark_protocol/evolution_acceptance_policy.md
-
-Current PBSA v1.1 status:
-
-- tests: 18 passing
-- decision: preserve_champion
-- overall classification: PBA-C
-- kernel replacement: disabled by default
-- next target: multi-label regime detection
-
+Important lock: PBSA v1.1 did not automatically replace the current PBA kernel.
 
 ## PBSA v1.2 Multi-Label Regime Detection Upgrade
 
-This repository now includes the PBSA v1.2 diagnostic refinement layer.
+Added primary_regime, secondary_regimes, risk_overlays, regime_scores, evidence_notes, PBSA-v1.2 report rendering, docs archive, implementation map, and RCC synchronization.
 
-Added surfaces:
-- primary_regime
-- secondary_regimes
-- risk_overlays
-- regime_scores
-- evidence_notes
-- PBSA-v1.2 evolution report rendering
-- docs/theory PBSA v1.2 archive
-- docs/architecture PBSA v1.2 implementation map
-- RCC mini README synchronization
-
-Important lock:
-- PBSA v1.2 improves diagnosis only.
-- The current PBA kernel remains champion.
-- Kernel mutation remains disabled by default.
-- Better regime labels are not biological proof or medical validation.
-
-Expected current interpretation:
-- temperature_like -> direct_recovery + cusp_risk + baseline_advantage
-- pulse_recovery -> pulse_recovery + cusp_risk + baseline_advantage
-- oscillatory_signal -> oscillatory + cusp_risk + pba_advantage
-
-Next target:
-- PBSA v1.3 holdout domain expansion and candidate evaluation readiness
+Important lock: PBSA v1.2 improved diagnosis only.
 
 ## PBSA v1.2.1 RCC Version Drift Cleanup
 
-This maintenance pass cleaned stale PBSA v1.1 labels from PBSA v1.2 configuration and evolution surfaces.
+Cleaned stale PBSA v1.1 labels from PBSA v1.2 configuration and evolution surfaces.
 
-Updated:
-- configs/evolution_policy.json
-- configs/suite_holdout_v1_0.json
-- src/pba/evolution/README.md
-- src/pba/evolution/kernel_candidate.py
-- latest evolution report after regeneration
-
-No kernel mutation occurred. Current decision remains preserve_champion.
-
+Important lock: no kernel mutation occurred.
 
 ## PBSA v1.3 Holdout and Candidate Readiness Upgrade
 
-This repository now includes the PBSA v1.3 holdout and candidate-readiness layer.
+Added four holdout domain configs, suite_holdout_v1_3.json, holdout summary generation, regime coverage matrix, candidate specification schema, candidate-readiness report, CLI commands for holdout/readiness, docs archive, implementation map, and RCC mini README synchronization.
 
-Added surfaces:
-- four holdout domain configs
-- suite_holdout_v1_3.json
-- holdout summary generation
-- regime coverage matrix
-- candidate specification schema
-- candidate-readiness report
-- CLI commands for holdout and readiness
-- docs/theory PBSA v1.3 archive
-- docs/architecture PBSA v1.3 implementation map
-- RCC mini README synchronization
+Important lock: PBSA v1.3 broadens evidence only. Candidate specs are not executable controllers. Candidate execution remains disabled.
 
-Important lock:
-- PBSA v1.3 broadens evidence only.
-- Candidate specs are not executable controllers.
-- Candidate execution remains disabled.
-- The current PBA kernel remains champion.
-- Kernel mutation remains disabled by default.
-- Holdout performance is not biological proof or medical validation.
-
-Commands:
-    python -m pba.cli run-suite --config .\configs\suite_holdout_v1_3.json
-    python -m pba.cli summarize-holdout
-    python -m pba.cli candidate-readiness
-
-Next target:
-- PBSA v1.4 champion/challenger execution and promotion governance
+Next target: PBSA v1.4 champion/challenger execution and promotion governance.
