@@ -75,7 +75,7 @@ The project moved through a full evidence loop:
 
 theory -> executable software -> tests -> benchmark evidence -> downgrade -> multi-label diagnosis -> holdout expansion -> candidate readiness -> champion/challenger comparison -> regime routing.
 
-The important current result is not “PBA wins everywhere.” The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
+The important current result is not â€œPBA wins everywhere.â€ The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
 
 ## Current finding
 
@@ -112,7 +112,9 @@ Current conclusion:
 
 The system is working because it did not over-promote itself. PBSA preserved baseline wins, preserved holdout weakness, avoided automatic kernel replacement, and converted `route_by_regime` into executable routing architecture.
 
-## Current benchmark and routing results
+## Current benchmark results
+
+This section includes both benchmark evidence and PBSA v2.0 routing evidence.
 
 Original suite summary:
 
