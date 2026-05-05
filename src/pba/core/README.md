@@ -4,15 +4,15 @@
 
 Core PBA runtime primitives.
 
-## S — Formal specification
+## S - Formal specification
 
 Defines domain loading, parameter manifests, state records, perturbations, cusp guard, signal preservation, allostasis, and kernel execution.
 
-## H — Hooks
+## H - Hooks
 
 Used by baselines, calibration, benchmark runner, and tests.
 
-## A — Artifacts
+## A - Artifacts
 
 - domain.py
 - parameters.py
@@ -23,11 +23,11 @@ Used by baselines, calibration, benchmark runner, and tests.
 - allostasis.py
 - kernel.py
 
-## T — Theory
+## T - Theory
 
 Core runtime implements Delta Phi deviation, Omega damping, cusp states, signal preservation, and anticipatory correction as computational abstractions.
 
-## I — Invariants
+## I - Invariants
 
 - Delta Phi is computational deviation.
 - Omega must remain bounded.
@@ -35,6 +35,6 @@ Core runtime implements Delta Phi deviation, Omega damping, cusp states, signal 
 - Signal preservation must not erase structure.
 - No biological mechanism claim.
 
-## E — Example
+## E - Example
 
 run_pba(domain, params, perturbations)

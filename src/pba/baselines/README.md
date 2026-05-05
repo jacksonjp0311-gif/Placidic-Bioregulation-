@@ -4,15 +4,15 @@
 
 Comparator models for shared-condition benchmark fairness.
 
-## S — Formal specification
+## S - Formal specification
 
 Each baseline exposes a run method using the same domain and perturbation sequence as PBA.
 
-## H — Hooks
+## H - Hooks
 
 Used by benchmark runner and metrics comparison.
 
-## A — Artifacts
+## A - Artifacts
 
 - base.py
 - proportional.py
@@ -20,16 +20,16 @@ Used by benchmark runner and metrics comparison.
 - threshold.py
 - return_to_setpoint.py
 
-## T — Theory
+## T - Theory
 
 PBSA cannot claim benchmark advantage without simpler baseline comparison.
 
-## I — Invariants
+## I - Invariants
 
 - Baselines must run under shared conditions.
 - Baselines must emit trajectories and metrics.
 - Baseline-superior results must trigger downgrade.
 
-## E — Example
+## E - Example
 
 Proportional feedback is currently the strongest baseline in the latest suite summary.

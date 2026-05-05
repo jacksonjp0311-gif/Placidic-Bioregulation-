@@ -4,15 +4,15 @@
 
 Evidence package, suite summary, file manifest, runtime ledger, and report generation.
 
-## S — Formal specification
+## S - Formal specification
 
 Turns runtime outputs into machine-readable evidence and conservative summaries.
 
-## H — Hooks
+## H - Hooks
 
 Used by benchmark runner, suite runner, CLI, reports, ledgers, and root README.
 
-## A — Artifacts
+## A - Artifacts
 
 - runtime_ledger.py
 - evidence_package.py
@@ -20,17 +20,17 @@ Used by benchmark runner, suite runner, CLI, reports, ledgers, and root README.
 - file_manifest.py
 - suite_summary.py
 
-## T — Theory
+## T - Theory
 
 Evidence must be machine-readable before narrative interpretation.
 
-## I — Invariants
+## I - Invariants
 
 - Evidence package must preserve files and claim boundary.
 - Suite summary must aggregate without inflating claims.
 - Reports must preserve non-claim boundary.
 - Ledgers must record continuity.
 
-## E — Example
+## E - Example
 
 reports/suite_summaries contains generated suite_summary.json and suite_summary.md.

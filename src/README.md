@@ -4,29 +4,29 @@
 
 Python source root.
 
-## S — Formal specification
+## S - Formal specification
 
 Contains the importable pba package.
 
-## H — Hooks
+## H - Hooks
 
 Used by tests, scripts, CLI, and pyproject package discovery.
 
-## A — Artifacts
+## A - Artifacts
 
 - pba package
 
-## T — Theory
+## T - Theory
 
 Source code is implementation evidence, not empirical validation.
 
-## I — Invariants
+## I - Invariants
 
 - Keep package importable.
 - Keep PYTHONPATH-compatible local execution.
 - Do not place generated benchmark outputs here.
 
-## E — Example
+## E - Example
 
 Set local path:
 $env:PYTHONPATH = ".\src"

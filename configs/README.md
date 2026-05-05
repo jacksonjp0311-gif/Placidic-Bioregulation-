@@ -4,11 +4,11 @@
 
 Declared benchmark surface for PBSA.
 
-## S — Formal specification
+## S - Formal specification
 
 Configs define domains, parameters, baselines, calibration grid, suite membership, and metric manifest.
 
-## H — Hooks
+## H - Hooks
 
 Used by:
 - src/pba/core/domain.py
@@ -17,7 +17,7 @@ Used by:
 - src/pba/benchmarks/suite_runner.py
 - tests
 
-## A — Artifacts
+## A - Artifacts
 
 - suite_v1_0.json
 - pba_params.json
@@ -26,18 +26,18 @@ Used by:
 - metric_manifest.json
 - domains/*.json
 
-## T — Theory
+## T - Theory
 
 Config-first execution prevents hidden calibration and post-hoc benchmark claims.
 
-## I — Invariants
+## I - Invariants
 
 - Parameters must be declared before run.
 - Baselines must share task conditions.
 - Domains must preserve non-claim locks.
 - Fit and evaluation seeds must remain visible.
 
-## E — Example
+## E - Example
 
 Run suite from repo root:
 python -m pba.cli run-suite --config .\configs\suite_v1_0.json

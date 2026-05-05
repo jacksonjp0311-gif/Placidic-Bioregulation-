@@ -4,28 +4,28 @@
 
 PBSA and PBA theory anchors.
 
-## S — Formal specification
+## S - Formal specification
 
 This folder stores local theory summaries and canonical anchors.
 
-## H — Hooks
+## H - Hooks
 
 Used by root README and architecture docs.
 
-## A — Artifacts
+## A - Artifacts
 
 - pbsa_v1_0_local_anchor.md
 
-## T — Theory
+## T - Theory
 
 PBSA is the software architecture layer for executable Placidic Bioregulation.
 
-## I — Invariants
+## I - Invariants
 
 - Theory is not implementation.
 - Implementation is not benchmark validation.
 - Benchmark success is not biological mechanism proof.
 
-## E — Example
+## E - Example
 
 Use this folder when writing high-level repo claims.

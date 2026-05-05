@@ -4,29 +4,29 @@
 
 Command-line interface.
 
-## S — Formal specification
+## S - Formal specification
 
 Exposes run-benchmark, run-suite, and compile-evidence commands.
 
-## H — Hooks
+## H - Hooks
 
 Used by scripts and human operators.
 
-## A — Artifacts
+## A - Artifacts
 
 - main.py
 - __main__.py
 
-## T — Theory
+## T - Theory
 
 CLI reproducibility is required for benchmark credibility.
 
-## I — Invariants
+## I - Invariants
 
 - Commands must be reproducible from repo root.
 - CLI must print machine-readable JSON.
 - CLI must not push to GitHub.
 
-## E — Example
+## E - Example
 
 python -m pba.cli run-suite --config .\configs\suite_v1_0.json

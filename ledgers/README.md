@@ -4,30 +4,30 @@
 
 Append-only local continuity records.
 
-## S — Formal specification
+## S - Formal specification
 
 Ledgers track runtime, evolution, and decision events.
 
-## H — Hooks
+## H - Hooks
 
 Written by evidence/runtime_ledger.py and local scripts.
 
-## A — Artifacts
+## A - Artifacts
 
 - pba_evolution_ledger.jsonl
 - pba_runtime_ledger.jsonl
 - pba_decision_ledger.jsonl
 
-## T — Theory
+## T - Theory
 
 Continuity requires append-only trace records.
 
-## I — Invariants
+## I - Invariants
 
 - Do not overwrite ledger history.
 - Append new events.
 - Preserve local-only status until push is approved.
 
-## E — Example
+## E - Example
 
 Get-Content .\ledgers\pba_runtime_ledger.jsonl
