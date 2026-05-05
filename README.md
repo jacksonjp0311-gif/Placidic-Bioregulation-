@@ -75,7 +75,7 @@ The project moved through a full evidence loop:
 
 theory -> executable software -> tests -> benchmark evidence -> downgrade -> multi-label diagnosis -> holdout expansion -> candidate readiness -> champion/challenger comparison -> regime routing.
 
-The important current result is not Ã¢â‚¬Å“PBA wins everywhere.Ã¢â‚¬Â The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
+The important current result is not ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œPBA wins everywhere.ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
 
 ## Current finding
 
@@ -217,6 +217,7 @@ The correct interpretation is:
 - Not proof that Delta Phi governs living systems.
 - Not proof that routing is biologically valid.
 - Not permission to treat toy benchmark results as biological evidence.
+- Do not treat benchmark success as biological validation.
 - Not permission to promote candidate specs into active controllers.
 - Not permission to treat local route selection as global kernel replacement.
 
