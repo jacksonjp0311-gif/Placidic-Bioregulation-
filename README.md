@@ -12,7 +12,7 @@ Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
 Current decision: preserve_champion  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 36 passing  
+Current tests: 35 passing  
 Candidate execution: comparison harness only  
 Kernel mutation: disabled  
 Next target: PBSA v2.0 - Regime-Routed PBSA or Manual Review  
@@ -26,7 +26,7 @@ Next target: PBSA v2.0 - Regime-Routed PBSA or Manual Review
 | Software architecture | PBSA v1.4 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
 | Python package | 0.5.0 | active |
-| Test suite | 36 passing | active |
+| Test suite | 35 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Evolution decision | preserve_champion | active |
