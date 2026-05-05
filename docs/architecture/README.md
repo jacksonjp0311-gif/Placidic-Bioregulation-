@@ -38,3 +38,11 @@ Added:
 - pbsa_v1_1_implementation_map.md
 
 This file maps architecture objects to implemented repo files and records the next upgrade target: multi-label regime detection.
+
+## PBSA v1.2 implementation map
+
+Added:
+
+- pbsa_v1_2_implementation_map.md
+
+This map links multi-label regime detection to concrete repository files and report outputs.

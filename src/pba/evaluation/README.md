@@ -38,3 +38,16 @@ Latest suite classification is PBA-C because evidence is mixed.
 - baseline_advantage.py maps PBA wins, baseline wins, and ties by domain.
 
 These modules are diagnostic only. They do not prove biological mechanism and do not replace the kernel.
+
+## PBSA v1.2 multi-label regime detection
+
+regime_detector.py now emits:
+
+- primary_regime
+- detected_regime for backward compatibility
+- secondary_regimes
+- risk_overlays
+- regime_scores
+- evidence_notes
+
+The detector must preserve both the domain shape and the risk overlay. cusp_risk can appear as a secondary overlay without erasing the primary regime.

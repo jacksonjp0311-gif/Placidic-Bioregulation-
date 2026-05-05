@@ -42,3 +42,11 @@ PBA v1.4 is the theory/governance layer for regime-aware placidity.
 PBSA v1.1 is the software architecture layer for diagnostic evidence feedback, RCC continuity, evolution reports, and champion/challenger readiness.
 
 Both preserve the non-claim boundary: no medical guidance, no clinical validation, no biological-law proof, and no mechanism proof.
+
+## PBSA v1.2 theory addition
+
+Added:
+
+- pbsa_v1_2_multi_label_regime_detection.md
+
+This document defines the multi-label diagnostic layer: primary regime plus secondary overlays, preserving cusp_risk without collapsing domain shape.

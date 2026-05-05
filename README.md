@@ -1,19 +1,19 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.1
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.2
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-
 GitHub push: performed
-Package version: 0.2.0
-Current software architecture: PBSA v1.1 - Diagnostic Evidence Feedback and RCC Context Architecture
+Package version: 0.3.0
+Current software architecture: PBSA v1.2 - Multi-Label Regime Detection and RCC Synchronization
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
 Current decision: preserve_champion
 Current suite classification: PBA-C
-Current tests: 18 passing
-Next target: PBSA v1.2 - Multi-Label Regime Detection Layer
+Current tests: 20 passing
+Next target: PBSA v1.3 - Holdout Domain Expansion and Candidate Evaluation Readiness
 
 ---
 
@@ -21,14 +21,14 @@ Next target: PBSA v1.2 - Multi-Label Regime Detection Layer
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v1.1 | implemented and pushed |
+| Software architecture | PBSA v1.2 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 0.2.0 | active |
-| Test suite | 18 passing | active |
+| Python package | 0.3.0 | active |
+| Test suite | 20 passing | active |
 | Evolution decision | preserve_champion | active |
 | Overall suite classification | PBA-C | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v1.2 | multi-label regime detection |
+| Next planned layer | PBSA v1.3 | holdout domain expansion and candidate evaluation readiness |
 
 ## Current architecture status
 
@@ -215,14 +215,14 @@ Before future pushes, verify:
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v1.1
+- PBSA_VERSION: PBSA-v1.2
 - PBA_VERSION: PBA-v1.4
-- package version: 0.2.0
+- package version: 0.3.0
 - current decision: preserve_champion
 - current suite classification: PBA-C
-- current tests: 18 passing
+- current tests: 20 passing
 - current docs archive: docs/theory and docs/architecture
-- next target: PBSA v1.2 multi-label regime detection
+- next target: PBSA v1.3 holdout domain expansion and candidate evaluation readiness
 
 AI agents must update this README when version constants, suite evidence, docs/theory, docs/architecture, or evolution reports change.
 
@@ -404,3 +404,33 @@ Current PBSA v1.1 status:
 - overall classification: PBA-C
 - kernel replacement: disabled by default
 - next target: multi-label regime detection
+
+
+## PBSA v1.2 Multi-Label Regime Detection Upgrade
+
+This repository now includes the PBSA v1.2 diagnostic refinement layer.
+
+Added surfaces:
+- primary_regime
+- secondary_regimes
+- risk_overlays
+- regime_scores
+- evidence_notes
+- PBSA-v1.2 evolution report rendering
+- docs/theory PBSA v1.2 archive
+- docs/architecture PBSA v1.2 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- PBSA v1.2 improves diagnosis only.
+- The current PBA kernel remains champion.
+- Kernel mutation remains disabled by default.
+- Better regime labels are not biological proof or medical validation.
+
+Expected current interpretation:
+- temperature_like -> direct_recovery + cusp_risk + baseline_advantage
+- pulse_recovery -> pulse_recovery + cusp_risk + baseline_advantage
+- oscillatory_signal -> oscillatory + cusp_risk + pba_advantage
+
+Next target:
+- PBSA v1.3 holdout domain expansion and candidate evaluation readiness

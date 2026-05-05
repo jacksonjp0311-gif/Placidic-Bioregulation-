@@ -45,3 +45,12 @@ Key files:
 - docs/benchmark_protocol/evolution_acceptance_policy.md
 
 These files document the diagnostic-first evidence-feedback layer, RCC merger, regime detection, baseline-win preservation, evolution reports, and the preserve_champion decision.
+
+## PBSA v1.2 documentation archive
+
+Added:
+
+- docs/theory/pbsa_v1_2_multi_label_regime_detection.md
+- docs/architecture/pbsa_v1_2_implementation_map.md
+
+PBSA v1.2 upgrades diagnostic resolution by separating primary regimes from secondary risk overlays.

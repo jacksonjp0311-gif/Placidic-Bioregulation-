@@ -40,3 +40,16 @@ reports/suite_summaries contains generated suite_summary.json and suite_summary.
 - evolution_report.py generates diagnostic evolution reports from suite summaries.
 - Reports preserve baseline wins, detected regimes, candidate recommendations, and non-claim locks.
 - Evolution reports do not replace the champion kernel.
+
+## PBSA v1.2 evolution report schema
+
+evolution_report.py now writes PBSA-v1.2 reports with:
+
+- diagnostic_upgrade = multi_label_regime_detection
+- domain_regimes
+- primary_regime
+- secondary_regimes
+- risk_overlays
+- evidence_notes
+
+The decision remains preserve_champion unless a future candidate passes the full acceptance policy.

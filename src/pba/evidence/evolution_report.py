@@ -53,6 +53,18 @@ def _run_record_from_artifacts(run_dir: Path, fallback: dict) -> dict:
     return record
 
 
+def _domain_regime_summary(regime_map: dict) -> dict:
+    output = {}
+    for domain, item in regime_map.items():
+        output[domain] = {
+            "primary_regime": item.get("primary_regime", item.get("detected_regime")),
+            "secondary_regimes": item.get("secondary_regimes", []),
+            "risk_overlays": item.get("risk_overlays", []),
+            "confidence": item.get("confidence"),
+        }
+    return output
+
+
 def build_evolution_report(
     root: str | Path,
     suite_summary_path: str | Path | None = None,
@@ -100,7 +112,9 @@ def build_evolution_report(
 
     report = {
         "evolution_report_id": report_id,
-        "version": "PBSA-v1.1",
+        "version": "PBSA-v1.2",
+        "diagnostic_upgrade": "multi_label_regime_detection",
+        "prior_issue": "single_label_detector_collapsed_all_domains_into_cusp_risk",
         "mode": policy.get("mode", "diagnostic_first"),
         "source_suite_summary": str(suite_summary_path),
         "champion_kernel": "current",
@@ -109,6 +123,7 @@ def build_evolution_report(
         "motivation": candidate.get("motivation"),
         "suite_evidence": suite_summary,
         "regime_map": regime_map,
+        "domain_regimes": _domain_regime_summary(regime_map),
         "baseline_advantage_map": baseline_map,
         "candidate_change": candidate,
         "decision": decision.get("decision"),
@@ -116,7 +131,7 @@ def build_evolution_report(
         "non_claim_locks_preserved": bool(decision.get("non_claim_locks_preserved", True)),
         "memory_promotion": {
             "promote": True,
-            "reason": "Promote diagnostic regime lessons, baseline-superiority lessons, and RCC constraints only.",
+            "reason": "Promote diagnostic multi-label regime lessons, baseline-superiority lessons, and RCC constraints only.",
         },
     }
 
@@ -133,7 +148,7 @@ def build_evolution_report(
     latest_md.write_text(render_evolution_markdown(report), encoding="utf-8")
 
     append_ledger(root / "ledgers" / "pba_decision_ledger.jsonl", {
-        "event": "pbsa_v1_1_evolution_report_generated",
+        "event": "pbsa_v1_2_multilabel_evolution_report_generated",
         "report_id": report_id,
         "decision": report["decision"],
         "suite_summary": str(suite_summary_path),
@@ -147,17 +162,20 @@ def build_evolution_report(
         "latest_evolution_report_md": str(latest_md),
         "decision": report["decision"],
         "overall_classification": suite_summary.get("overall_classification"),
+        "diagnostic_upgrade": report["diagnostic_upgrade"],
     }
 
 
 def render_evolution_markdown(report: dict) -> str:
     lines = [
-        "# PBSA v1.1 Evolution Report",
+        "# PBSA v1.2 Evolution Report",
         "",
         "## Status",
         "",
         f"- Report ID: {report['evolution_report_id']}",
         f"- Version: {report['version']}",
+        f"- Diagnostic upgrade: {report.get('diagnostic_upgrade')}",
+        f"- Prior issue: {report.get('prior_issue')}",
         f"- Mode: {report['mode']}",
         f"- Decision: {report['decision']}",
         f"- Reason: {report['decision_reason']}",
@@ -175,10 +193,22 @@ def render_evolution_markdown(report: dict) -> str:
     for domain, item in report.get("baseline_advantage_map", {}).items():
         lines.append(f"- {domain}: {item.get('winner')} ({item.get('baseline_result')})")
 
-    lines.extend(["", "## Regime Map", ""])
+    lines.extend(["", "## Multi-Label Regime Map", ""])
 
     for domain, item in report.get("regime_map", {}).items():
-        lines.append(f"- {domain}: {item.get('detected_regime')} ({item.get('confidence')}) - {item.get('recommendation')}")
+        primary = item.get("primary_regime", item.get("detected_regime"))
+        secondary = item.get("secondary_regimes", [])
+        risks = item.get("risk_overlays", [])
+        confidence = item.get("confidence")
+        lines.append(f"- {domain}: primary={primary}; secondary={secondary}; risk_overlays={risks}; confidence={confidence}")
+
+    lines.extend(["", "## Evidence Notes", ""])
+
+    for domain, item in report.get("regime_map", {}).items():
+        lines.append(f"### {domain}")
+        for note in item.get("evidence_notes", []):
+            lines.append(f"- {note}")
+        lines.append(f"- Recommendation: {item.get('recommendation')}")
 
     lines.extend([
         "",
