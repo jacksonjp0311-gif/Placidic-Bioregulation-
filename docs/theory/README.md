@@ -50,3 +50,10 @@ Added:
 - pbsa_v1_2_multi_label_regime_detection.md
 
 This document defines the multi-label diagnostic layer: primary regime plus secondary overlays, preserving cusp_risk without collapsing domain shape.
+
+## PBSA v1.3 theory addition
+
+Added:
+- pbsa_v1_3_holdout_candidate_readiness.md
+
+This document defines holdout expansion and candidate readiness without kernel replacement.

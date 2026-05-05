@@ -104,6 +104,10 @@ def detect_regime(
         scores[OSCILLATORY] += 1.0
         evidence_notes.append("Domain identity supports oscillatory primary regime.")
 
+    if "noise" in domain_key or "noisy" in domain_key:
+        scores[NOISY] += 1.0
+        evidence_notes.append("Domain identity supports noisy primary regime.")
+
     # Feature-based scoring.
     if sign_changes >= 4:
         scores[OSCILLATORY] += 0.6

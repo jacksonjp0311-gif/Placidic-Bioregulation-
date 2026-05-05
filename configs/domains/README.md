@@ -32,3 +32,12 @@ Domains are toy computational evaluation surfaces, not biological systems.
 ## E - Example
 
 python -m pba.cli run-benchmark --domain .\configs\domains\temperature_like.json
+
+## PBSA v1.3 holdout domains
+
+Holdout domains broaden evidence coverage before candidate execution.
+
+They must preserve:
+- not_medical
+- not_biological_law
+- not_mechanism_proof

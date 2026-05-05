@@ -46,3 +46,8 @@ Added:
 - pbsa_v1_2_implementation_map.md
 
 This map links multi-label regime detection to concrete repository files and report outputs.
+
+## PBSA v1.3 implementation map
+
+Added:
+- pbsa_v1_3_implementation_map.md

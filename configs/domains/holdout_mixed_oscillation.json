@@ -1,0 +1,28 @@
+{
+  "domain_id": "holdout_mixed_oscillation",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [
+    -0.32,
+    0.32
+  ],
+  "time_steps": 140,
+  "initial_state": 0.68,
+  "perturbation_family": "oscillatory_signal",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.02,
+    "high": 0.02,
+    "seed": 2001
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 2002,
+    "eval_seed": 2003
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

@@ -54,3 +54,9 @@ Added:
 - docs/architecture/pbsa_v1_2_implementation_map.md
 
 PBSA v1.2 upgrades diagnostic resolution by separating primary regimes from secondary risk overlays.
+
+## PBSA v1.3 documentation archive
+
+Added:
+- docs/theory/pbsa_v1_3_holdout_candidate_readiness.md
+- docs/architecture/pbsa_v1_3_implementation_map.md

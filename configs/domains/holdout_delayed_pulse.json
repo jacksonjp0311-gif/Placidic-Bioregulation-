@@ -1,0 +1,28 @@
+{
+  "domain_id": "holdout_delayed_pulse",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [
+    -0.22,
+    0.22
+  ],
+  "time_steps": 140,
+  "initial_state": 0.88,
+  "perturbation_family": "pulse_plus_noise",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.025,
+    "high": 0.025,
+    "seed": 1801
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 1802,
+    "eval_seed": 1803
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

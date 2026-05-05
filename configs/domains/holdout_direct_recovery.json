@@ -1,0 +1,28 @@
+{
+  "domain_id": "holdout_direct_recovery",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [
+    -0.2,
+    0.2
+  ],
+  "time_steps": 120,
+  "initial_state": 0.72,
+  "perturbation_family": "pulse_plus_noise",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.018,
+    "high": 0.018,
+    "seed": 1701
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 1702,
+    "eval_seed": 1703
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

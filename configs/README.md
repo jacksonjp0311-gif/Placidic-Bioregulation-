@@ -53,3 +53,14 @@ python -m pba.cli run-suite --config .\configs\suite_v1_0.json
 - evolution_policy.json now declares PBSA-EvolutionPolicy-v1.2.
 - suite_holdout_v1_0.json now references PBSA v1.2 diagnostic schema.
 - Kernel mutation remains disabled by default.
+
+## PBSA v1.3 holdout configs
+
+Added:
+- configs/domains/holdout_direct_recovery.json
+- configs/domains/holdout_delayed_pulse.json
+- configs/domains/holdout_noisy_recovery.json
+- configs/domains/holdout_mixed_oscillation.json
+- configs/suite_holdout_v1_3.json
+
+These are computational toy holdout domains only. They are not biological systems.

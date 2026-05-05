@@ -1,0 +1,18 @@
+{
+  "version": "PBSA-SuiteHoldout-v1.3",
+  "suite_name": "suite_holdout_v1_3",
+  "description": "PBSA v1.3 holdout suite for generalization and candidate-readiness testing. Computational toy domains only.",
+  "parameter_manifest": "configs/pba_params.json",
+  "baseline_params": "configs/baseline_params.json",
+  "calibration_grid": "configs/calibration_grid.json",
+  "metric_manifest": "configs/metric_manifest.json",
+  "domains": [
+    "configs/domains/holdout_direct_recovery.json",
+    "configs/domains/holdout_delayed_pulse.json",
+    "configs/domains/holdout_noisy_recovery.json",
+    "configs/domains/holdout_mixed_oscillation.json"
+  ],
+  "candidate_execution_allowed": false,
+  "kernel_mutation_allowed": false,
+  "non_claim_boundary": "computational holdout evidence only; not biological validation"
+}

@@ -1,19 +1,19 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.2
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.3
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-
 GitHub push: performed
-Package version: 0.3.0
-Current software architecture: PBSA v1.2 - Multi-Label Regime Detection and RCC Synchronization
+Package version: 0.4.0
+Current software architecture: PBSA v1.3 - Holdout Domain Expansion and Candidate Readiness
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
 Current decision: preserve_champion
 Current suite classification: PBA-C
-Current tests: 21 passing
-Next target: PBSA v1.3 - Holdout Domain Expansion and Candidate Evaluation Readiness
+Current tests: 27 passing
+Next target: PBSA v1.4 - Champion/Challenger Execution and Promotion Governance
 
 ---
 
@@ -21,14 +21,14 @@ Next target: PBSA v1.3 - Holdout Domain Expansion and Candidate Evaluation Readi
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v1.2 | implemented and pushed |
+| Software architecture | PBSA v1.3 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 0.3.0 | active |
-| Test suite | 21 passing | active |
+| Python package | 0.4.0 | active |
+| Test suite | 27 passing | active |
 | Evolution decision | preserve_champion | active |
 | Overall suite classification | PBA-C | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v1.3 | holdout domain expansion and candidate evaluation readiness |
+| Next planned layer | PBSA v1.4 | champion/challenger execution and promotion governance |
 
 ## Current architecture status
 
@@ -215,14 +215,14 @@ Before future pushes, verify:
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v1.2
+- PBSA_VERSION: PBSA-v1.3
 - PBA_VERSION: PBA-v1.4
-- package version: 0.3.0
+- package version: 0.4.0
 - current decision: preserve_champion
 - current suite classification: PBA-C
-- current tests: 21 passing
+- current tests: 27 passing
 - current docs archive: docs/theory and docs/architecture
-- next target: PBSA v1.3 holdout domain expansion and candidate evaluation readiness
+- next target: PBSA v1.4 champion/challenger execution and promotion governance
 
 AI agents must update this README when version constants, suite evidence, docs/theory, docs/architecture, or evolution reports change.
 
@@ -447,3 +447,36 @@ Updated:
 - latest evolution report after regeneration
 
 No kernel mutation occurred. Current decision remains preserve_champion.
+
+
+## PBSA v1.3 Holdout and Candidate Readiness Upgrade
+
+This repository now includes the PBSA v1.3 holdout and candidate-readiness layer.
+
+Added surfaces:
+- four holdout domain configs
+- suite_holdout_v1_3.json
+- holdout summary generation
+- regime coverage matrix
+- candidate specification schema
+- candidate-readiness report
+- CLI commands for holdout and readiness
+- docs/theory PBSA v1.3 archive
+- docs/architecture PBSA v1.3 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- PBSA v1.3 broadens evidence only.
+- Candidate specs are not executable controllers.
+- Candidate execution remains disabled.
+- The current PBA kernel remains champion.
+- Kernel mutation remains disabled by default.
+- Holdout performance is not biological proof or medical validation.
+
+Commands:
+    python -m pba.cli run-suite --config .\configs\suite_holdout_v1_3.json
+    python -m pba.cli summarize-holdout
+    python -m pba.cli candidate-readiness
+
+Next target:
+- PBSA v1.4 champion/challenger execution and promotion governance

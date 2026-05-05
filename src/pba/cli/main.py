@@ -8,6 +8,8 @@ from pba.benchmarks.runner import run_benchmark
 from pba.benchmarks.suite_runner import run_suite
 from pba.evidence.evidence_package import compile_evidence_package
 from pba.evidence.evolution_report import build_evolution_report
+from pba.evidence.holdout_summary import compile_holdout_summary
+from pba.evolution.candidate_readiness import build_candidate_readiness_report
 from pba.evolution.champion_challenger import compare_champion_challenger
 from pba.evolution.evolution_policy import load_evolution_policy
 
@@ -33,6 +35,12 @@ def main() -> int:
     de = sub.add_parser("diagnose-evolution")
     de.add_argument("--suite-summary", default=None)
     de.add_argument("--policy", default="configs/evolution_policy.json")
+
+    hs = sub.add_parser("summarize-holdout")
+    hs.add_argument("--suite-summary", default=None)
+
+    cr = sub.add_parser("candidate-readiness")
+    cr.add_argument("--holdout-summary", default=None)
 
     ck = sub.add_parser("compare-kernels")
     ck.add_argument("--champion-summary", default=None)
@@ -65,6 +73,16 @@ def main() -> int:
 
     if args.cmd == "diagnose-evolution":
         result = build_evolution_report(root, suite_summary_path=args.suite_summary, policy_path=args.policy)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "summarize-holdout":
+        result = compile_holdout_summary(root, suite_summary_path=args.suite_summary)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "candidate-readiness":
+        result = build_candidate_readiness_report(root, holdout_summary_path=args.holdout_summary)
         print(json.dumps(result, indent=2))
         return 0
 

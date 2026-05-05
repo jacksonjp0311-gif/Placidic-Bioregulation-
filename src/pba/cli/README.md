@@ -30,3 +30,9 @@ CLI reproducibility is required for benchmark credibility.
 ## E - Example
 
 python -m pba.cli run-suite --config .\configs\suite_v1_0.json
+
+## PBSA v1.3 CLI commands
+
+Added:
+- python -m pba.cli summarize-holdout
+- python -m pba.cli candidate-readiness

@@ -1,0 +1,28 @@
+{
+  "domain_id": "holdout_noisy_recovery",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [
+    -0.28,
+    0.28
+  ],
+  "time_steps": 120,
+  "initial_state": 0.78,
+  "perturbation_family": "noisy_perturbation",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.035,
+    "high": 0.035,
+    "seed": 1901
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 1902,
+    "eval_seed": 1903
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

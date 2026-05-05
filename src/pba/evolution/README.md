@@ -35,3 +35,11 @@ Placidity is regime-conditioned. Baseline wins are diagnostic evidence, not emba
 ## E - Example
 
 python -m pba.cli diagnose-evolution
+
+## PBSA v1.3 candidate readiness
+
+Added:
+- candidate_spec.py
+- candidate_readiness.py
+
+Candidate specs are plans, not executable controllers. Candidate execution remains disabled in v1.3.

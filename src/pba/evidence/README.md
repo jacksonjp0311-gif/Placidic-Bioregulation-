@@ -53,3 +53,13 @@ evolution_report.py now writes PBSA-v1.2 reports with:
 - evidence_notes
 
 The decision remains preserve_champion unless a future candidate passes the full acceptance policy.
+
+## PBSA v1.3 holdout summary
+
+holdout_summary.py generates:
+- holdout_summary.json
+- holdout_summary.md
+- regime coverage matrix
+- candidate readiness preconditions
+
+Holdout evidence is computational only and does not validate biological claims.

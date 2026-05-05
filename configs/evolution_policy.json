@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v1.2",
+  "version": "PBSA-EvolutionPolicy-v1.3",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -10,7 +10,10 @@
     "holdout_required_before_kernel_replacement": true,
     "do_not_hide_baseline_wins": true,
     "evolution_report_required": true,
-    "decision_ledger_required": true
+    "decision_ledger_required": true,
+    "holdout_summary_required": true,
+    "candidate_readiness_report_required": true,
+    "candidate_execution_disabled_in_v1_3": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -35,5 +38,8 @@
     ]
   },
   "diagnostic_schema": "multi_label_regime_detection",
-  "rcc_sync_required": true
+  "rcc_sync_required": true,
+  "holdout_required_before_candidate_execution": true,
+  "candidate_execution_allowed": false,
+  "candidate_promotion_allowed": false
 }
