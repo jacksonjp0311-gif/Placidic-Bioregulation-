@@ -1,0 +1,16 @@
+{
+  "proportional_feedback": {
+    "gain": 0.08
+  },
+  "pi_control": {
+    "kp": 0.06,
+    "ki": 0.005
+  },
+  "threshold_control": {
+    "threshold": 0.20,
+    "step": 0.10
+  },
+  "return_to_setpoint": {
+    "rate": 0.05
+  }
+}

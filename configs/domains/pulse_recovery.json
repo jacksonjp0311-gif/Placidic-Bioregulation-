@@ -1,0 +1,25 @@
+{
+  "domain_id": "pulse_recovery",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [-0.20, 0.20],
+  "time_steps": 120,
+  "initial_state": 0.85,
+  "perturbation_family": "pulse_plus_noise",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.02,
+    "high": 0.02,
+    "seed": 888
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 303,
+    "eval_seed": 404
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

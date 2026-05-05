@@ -1,0 +1,17 @@
+{
+  "version": "PBSA-MetricManifest-v1.0",
+  "primary_metrics": [
+    "cumulative_deviation",
+    "overshoot",
+    "cusp_warnings",
+    "signal_preservation"
+  ],
+  "secondary_metrics": [
+    "recovery_time",
+    "undershoot",
+    "oscillation_amplitude",
+    "robustness",
+    "parameter_sensitivity"
+  ],
+  "declared_before_run": true
+}

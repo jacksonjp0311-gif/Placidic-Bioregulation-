@@ -1,0 +1,25 @@
+{
+  "domain_id": "temperature_like",
+  "regulated_variable": "x_t",
+  "target": 0.0,
+  "viable_interval": [-0.25, 0.25],
+  "time_steps": 100,
+  "initial_state": 1.0,
+  "perturbation_family": "pulse_plus_noise",
+  "noise_model": {
+    "type": "bounded_uniform",
+    "low": -0.03,
+    "high": 0.03,
+    "seed": 777
+  },
+  "observation_cadence": 1,
+  "fit_eval_split": {
+    "fit_seed": 101,
+    "eval_seed": 202
+  },
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

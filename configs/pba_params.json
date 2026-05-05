@@ -1,0 +1,14 @@
+{
+  "version": "PBSA-ParameterManifest-v1.0",
+  "parameters": {
+    "eta": 0.10,
+    "tau_1": 0.30,
+    "tau_2": 0.80,
+    "kappa": 0.05,
+    "alpha": 0.80,
+    "theta_M": 0.70,
+    "beta": 0.10,
+    "gamma": 0.05
+  },
+  "declared_before_run": true
+}
