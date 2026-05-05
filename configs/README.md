@@ -41,3 +41,9 @@ Config-first execution prevents hidden calibration and post-hoc benchmark claims
 
 Run suite from repo root:
 python -m pba.cli run-suite --config .\configs\suite_v1_0.json
+
+## PBSA v1.1 evolution configs
+
+- evolution_policy.json declares diagnostic-first rules.
+- suite_holdout_v1_0.json is a holdout/repeat-suite placeholder until new domains are added.
+- Kernel mutation is disabled by default.

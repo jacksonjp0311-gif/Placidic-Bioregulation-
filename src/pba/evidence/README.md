@@ -34,3 +34,9 @@ Evidence must be machine-readable before narrative interpretation.
 ## E - Example
 
 reports/suite_summaries contains generated suite_summary.json and suite_summary.md.
+
+## PBSA v1.1 evolution reporting
+
+- evolution_report.py generates diagnostic evolution reports from suite summaries.
+- Reports preserve baseline wins, detected regimes, candidate recommendations, and non-claim locks.
+- Evolution reports do not replace the champion kernel.

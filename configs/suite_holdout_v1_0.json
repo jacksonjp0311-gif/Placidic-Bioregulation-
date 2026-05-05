@@ -1,0 +1,14 @@
+{
+  "suite_name": "suite_holdout_v1_0",
+  "description": "PBSA v1.1 holdout placeholder. Uses declared current toy domains until new holdout domains are added.",
+  "parameter_manifest": "configs/pba_params.json",
+  "baseline_params": "configs/baseline_params.json",
+  "calibration_grid": "configs/calibration_grid.json",
+  "metric_manifest": "configs/metric_manifest.json",
+  "domains": [
+    "configs/domains/temperature_like.json",
+    "configs/domains/pulse_recovery.json",
+    "configs/domains/oscillatory_signal.json"
+  ],
+  "non_claim_boundary": "holdout placeholder only; not biological validation"
+}

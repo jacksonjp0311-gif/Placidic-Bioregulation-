@@ -7,6 +7,9 @@ from pathlib import Path
 from pba.benchmarks.runner import run_benchmark
 from pba.benchmarks.suite_runner import run_suite
 from pba.evidence.evidence_package import compile_evidence_package
+from pba.evidence.evolution_report import build_evolution_report
+from pba.evolution.champion_challenger import compare_champion_challenger
+from pba.evolution.evolution_policy import load_evolution_policy
 
 
 def main() -> int:
@@ -26,6 +29,15 @@ def main() -> int:
 
     ce = sub.add_parser("compile-evidence")
     ce.add_argument("--run", required=True)
+
+    de = sub.add_parser("diagnose-evolution")
+    de.add_argument("--suite-summary", default=None)
+    de.add_argument("--policy", default="configs/evolution_policy.json")
+
+    ck = sub.add_parser("compare-kernels")
+    ck.add_argument("--champion-summary", default=None)
+    ck.add_argument("--candidate-summary", default=None)
+    ck.add_argument("--policy", default="configs/evolution_policy.json")
 
     args = parser.parse_args()
     root = Path.cwd()
@@ -49,6 +61,25 @@ def main() -> int:
     if args.cmd == "compile-evidence":
         package = compile_evidence_package(args.run)
         print(json.dumps(package, indent=2))
+        return 0
+
+    if args.cmd == "diagnose-evolution":
+        result = build_evolution_report(root, suite_summary_path=args.suite_summary, policy_path=args.policy)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "compare-kernels":
+        policy = load_evolution_policy(args.policy)
+
+        def load(path_text):
+            if not path_text:
+                return None
+            return json.loads(Path(path_text).read_text(encoding="utf-8"))
+
+        champion = load(args.champion_summary) or {}
+        candidate = load(args.candidate_summary)
+        result = compare_champion_challenger(champion, candidate, policy)
+        print(json.dumps(result, indent=2))
         return 0
 
     return 1

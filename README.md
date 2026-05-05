@@ -308,3 +308,23 @@ Update tests/test_rcc_readmes.py so the documentation contract remains executabl
 ## Final AI warning
 
 This repository is built to downgrade itself. Do not optimize documentation to sound stronger than the evidence. The correct behavior is to preserve mixed results, baseline wins, failure surfaces, and non-claim boundaries.
+
+## PBSA v1.1 Diagnostic Evidence Feedback Upgrade
+
+This repository now includes the PBSA v1.1 diagnostic-first evolution layer.
+
+Added surfaces:
+- regime detection
+- baseline advantage mapping
+- evolution policy
+- evolution reports
+- champion/challenger scaffolding
+- RCC-aware continuity updates
+
+Important lock:
+- PBSA v1.1 does not automatically replace the current PBA kernel.
+- The current kernel remains champion until a candidate passes tests, suite comparison, baseline comparison, evolution reporting, and non-claim lock checks.
+
+Commands:
+    python -m pba.cli diagnose-evolution
+    python -m pba.cli compare-kernels

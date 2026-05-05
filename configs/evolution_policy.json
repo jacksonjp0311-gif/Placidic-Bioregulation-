@@ -1,0 +1,37 @@
+{
+  "version": "PBSA-EvolutionPolicy-v1.1",
+  "mode": "diagnostic_first",
+  "kernel_mutation_allowed": false,
+  "acceptance_rules": {
+    "tests_must_pass": true,
+    "pba_e_count_must_be_zero": true,
+    "baseline_comparison_required": true,
+    "non_claim_locks_required": true,
+    "holdout_required_before_kernel_replacement": true,
+    "do_not_hide_baseline_wins": true,
+    "evolution_report_required": true,
+    "decision_ledger_required": true
+  },
+  "score_policy": {
+    "primary_metric": "cumulative_deviation",
+    "lower_is_better": true,
+    "preserve_or_explain_pba_a_loss": true
+  },
+  "memory_promotion": {
+    "allow": [
+      "reproducible_improvement",
+      "regime_detection_rule",
+      "baseline_superiority_lesson",
+      "implementation_constraint",
+      "failure_lesson",
+      "rcc_context_constraint"
+    ],
+    "reject": [
+      "medical_claim",
+      "biological_law_claim",
+      "mechanism_proof_claim",
+      "single_run_hype",
+      "readme_polish_as_evidence"
+    ]
+  }
+}

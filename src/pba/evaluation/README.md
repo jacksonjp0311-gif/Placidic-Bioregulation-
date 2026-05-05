@@ -31,3 +31,10 @@ Classification happens after evidence. Mixed evidence must downgrade.
 ## E - Example
 
 Latest suite classification is PBA-C because evidence is mixed.
+
+## PBSA v1.1 diagnostic modules
+
+- regime_detector.py detects computational disturbance regimes from metrics and comparison results.
+- baseline_advantage.py maps PBA wins, baseline wins, and ties by domain.
+
+These modules are diagnostic only. They do not prove biological mechanism and do not replace the kernel.
