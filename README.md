@@ -1,20 +1,46 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.0
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v1.1
 
-Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.3.
+Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
-Status: local development repository
-GitHub remote: not added
-GitHub push: not performed
+Status: GitHub-published research repository
+GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-
+GitHub push: performed
+Package version: 0.2.0
+Current software architecture: PBSA v1.1 - Diagnostic Evidence Feedback and RCC Context Architecture
+Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
+Current decision: preserve_champion
+Current suite classification: PBA-C
+Current tests: 18 passing
+Next target: PBSA v1.2 - Multi-Label Regime Detection Layer
 
 ---
+
+## Version ledger
+
+| Layer | Current version | Repository status |
+|---|---:|---|
+| Software architecture | PBSA v1.1 | implemented and pushed |
+| Algorithm theory | PBA v1.4 | documented in docs/theory |
+| Python package | 0.2.0 | active |
+| Test suite | 18 passing | active |
+| Evolution decision | preserve_champion | active |
+| Overall suite classification | PBA-C | active |
+| RCC documentation contract | passing | active |
+| Next planned layer | PBSA v1.2 | multi-label regime detection |
+
+## Current architecture status
+
+PBSA v1.1 is a diagnostic-first evidence-feedback layer. It adds regime detection, baseline advantage mapping, evolution policy, evolution reports, and champion/challenger scaffolding. It does not automatically replace the current PBA kernel.
+
+The current champion kernel remains preserved until a future candidate passes tests, suite comparison, baseline comparison, evolution reporting, decision ledger checks, non-claim lock verification, and holdout or repeat-suite evidence where available.
 
 # PART I - Human README
 
 ## Executive summary
 
-Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.0: a software architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions.
+Placidic Bioregulation is a runnable Python research scaffold that implements PBSA v1.1: a diagnostic evidence-feedback software architecture for testing a bounded regulation algorithm against simpler baselines under declared toy benchmark conditions, preserving RCC context surfaces, and generating evolution reports without automatically replacing the champion kernel.
 
 The repository is designed to be honest before it is impressive. It runs tests, executes benchmark domains, compares PBA against baseline controllers, emits metrics, checks identifiability, classifies each run, aggregates suite-level evidence, and preserves non-claim boundaries.
 
@@ -154,20 +180,51 @@ Dump the repo structure:
 
 ## Release and GitHub status
 
-This repository is currently local-only. Do not push until explicitly approved.
+This repository has been published to GitHub.
 
-Before GitHub push, verify:
+Remote:
+
+    https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-
+
+Current published status:
+
+- PBSA v1.1 diagnostic evidence-feedback layer added.
+- PBA v1.4 theory/governance docs archived.
+- 18 tests passing.
+- Latest evolution report generated.
+- Current decision: preserve_champion.
+- Overall suite classification: PBA-C.
+- Kernel replacement: disabled by default.
+- Next target: PBSA v1.2 multi-label regime detection.
+
+Before future pushes, verify:
 
 - tests pass,
 - suite summary exists,
+- evolution report exists if diagnostics changed,
 - root README is current,
 - mini READMEs exist,
-- no medical or biological-law claim entered the docs,
-- no GitHub remote was added accidentally.
+- docs/theory and docs/architecture reflect current versioning,
+- no medical or biological-law claim entered the docs.
 
 ---
 
 # PART II - AI / Agent README
+
+## AI version tracking contract
+
+Current canonical versions:
+
+- PBSA_VERSION: PBSA-v1.1
+- PBA_VERSION: PBA-v1.4
+- package version: 0.2.0
+- current decision: preserve_champion
+- current suite classification: PBA-C
+- current tests: 18 passing
+- current docs archive: docs/theory and docs/architecture
+- next target: PBSA v1.2 multi-label regime detection
+
+AI agents must update this README when version constants, suite evidence, docs/theory, docs/architecture, or evolution reports change.
 
 ## AI operating contract
 
