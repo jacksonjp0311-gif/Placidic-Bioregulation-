@@ -31,10 +31,15 @@ class TestRCCReadmes(unittest.TestCase):
         for rel in required:
             self.assertTrue(Path(rel).exists(), f"Missing RCC README: {rel}")
 
-    def test_root_readme_has_ai_instructions_and_non_claim_lock(self):
+    def test_root_readme_has_human_and_ai_sections(self):
         text = Path("README.md").read_text(encoding="utf-8")
-        self.assertIn("AI reader instructions", text)
+        self.assertIn("PART I — Human README", text)
+        self.assertIn("PART II — AI / Agent README", text)
+        self.assertIn("Current benchmark results", text)
+        self.assertIn("Where to find benchmark findings", Path("reports/README.md").read_text(encoding="utf-8"))
+        self.assertIn("AI operating contract", text)
         self.assertIn("RCC documentation contract", text)
+        self.assertIn("PBSA evidence contract", text)
         self.assertIn("Not medical guidance", text)
         self.assertIn("Do not treat benchmark success as biological validation", text)
 
@@ -43,6 +48,8 @@ class TestRCCReadmes(unittest.TestCase):
             "src/pba/core/README.md",
             "src/pba/evidence/README.md",
             "configs/README.md",
+            "reports/README.md",
+            "runs/README.md",
         ]
         for rel in mini:
             text = Path(rel).read_text(encoding="utf-8")
