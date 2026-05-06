@@ -102,3 +102,11 @@ Added:
 - configs/validation/stress_validation_policy_v2_3.json
 
 These configs test whether externally validated routing fails safely under adversarial pressure.
+
+## PBSA v2.4 calibration config
+
+Added:
+- configs/calibration/calibration_policy_v2_4.json
+- configs/calibration/threshold_grid_v2_4.json
+
+These configs tune route thresholds while preserving safe-fail behavior, crash-rate visibility, overfitting guards, and non-claim locks.

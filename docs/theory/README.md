@@ -82,3 +82,8 @@ Added:
 
 Added:
 - pbsa_v2_3_stress_adversarial_validation.md
+
+## PBSA v2.4 theory addition
+
+Added:
+- pbsa_v2_4_calibration_threshold_tuning.md

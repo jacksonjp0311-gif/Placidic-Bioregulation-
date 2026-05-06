@@ -76,3 +76,8 @@ Added:
 
 Added:
 - pbsa_v2_3_implementation_map.md
+
+## PBSA v2.4 implementation map
+
+Added:
+- pbsa_v2_4_implementation_map.md

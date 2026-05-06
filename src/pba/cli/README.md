@@ -61,3 +61,8 @@ Added:
 
 Added:
 - python -m pba.cli stress-validation-report
+
+## PBSA v2.4 CLI command
+
+Added:
+- python -m pba.cli calibration-report

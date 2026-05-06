@@ -1,24 +1,24 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.3
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.4
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository  
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
-Package version: 1.3.0  
-Current software architecture: PBSA v2.3 - Stress/Adversarial Validation  
+Package version: 1.4.0  
+Current software architecture: PBSA v2.4 - Calibration and Threshold Tuning  
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
 Current global decision: route_by_regime  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 75 passing  
+Current tests: 91 passing  
 Candidate execution: comparison harness only  
 Route execution: enabled through governed routing reports  
 Manual review required: true  
 Automatic kernel replacement: disabled  
 Kernel mutation: disabled  
-Next target: PBSA v2.4 - Calibration and Threshold Tuning  
+Next target: PBSA v2.5 - Evidence Package Hardening  
 
 ---
 
@@ -26,10 +26,10 @@ Next target: PBSA v2.4 - Calibration and Threshold Tuning
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v2.3 | implemented and pushed |
+| Software architecture | PBSA v2.4 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 1.3.0 | active |
-| Test suite | 75 passing | active |
+| Python package | 1.4.0 | active |
+| Test suite | 91 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Champion/challenger decision | route_by_regime | active |
@@ -40,7 +40,7 @@ Next target: PBSA v2.4 - Calibration and Threshold Tuning
 | Automatic kernel replacement | disabled | active |
 | Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v2.4 | calibration and threshold tuning |
+| Next planned layer | PBSA v2.5 | evidence package hardening |
 
 ## Current architecture status
 
@@ -295,7 +295,7 @@ Current published status:
 
 - PBSA v2.0 regime-routed architecture added.
 - PBA v1.4 theory/governance docs archived.
-- Package version: 1.3.0.
+- Package version: 1.4.0.
 - 44 tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
@@ -345,13 +345,13 @@ This section preserves stable README anchors required by the executable RCC docu
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v2.3
+- PBSA_VERSION: PBSA-v2.4
 - PBA_VERSION: PBA-v1.4
-- package version: 1.3.0
+- package version: 1.4.0
 - current global decision: route_by_regime
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
-- current tests: 75 passing
+- current tests: 91 passing
 - candidate execution allowed: comparison harness only
 - route execution enabled: governed reports only
 - manual review required: true
@@ -360,7 +360,7 @@ Current canonical versions:
 - current docs archive: docs/theory and docs/architecture
 - current routing policy: configs/routing/regime_route_policy_v2_0.json
 - latest routed suite report: reports/routing/latest_routed_suite_report.json
-- next target: PBSA v2.4 calibration and threshold tuning
+- next target: PBSA v2.5 evidence package hardening
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, champion/challenger evidence, routed-suite evidence, route policy, route selector behavior, docs/theory, docs/architecture, or evolution reports change.
 
@@ -709,3 +709,40 @@ Command:
 
 Next target:
 - PBSA v2.4 calibration and threshold tuning
+
+
+## PBSA v2.4 Calibration and Threshold Tuning Upgrade
+
+This repository now includes the PBSA v2.4 calibration and threshold tuning layer.
+
+Added surfaces:
+- calibration policy config
+- threshold grid config
+- threshold candidate schema
+- calibration metrics
+- overfitting guard
+- safe-fail preservation check
+- calibration runner
+- calibration report
+- CLI command for calibration reports
+- docs/theory PBSA v2.4 archive
+- docs/architecture PBSA v2.4 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- Calibration is not biological validation.
+- Threshold tuning is not medical safety.
+- Threshold tuning must not hide failures.
+- Threshold tuning must not weaken safe-fail behavior.
+- Overfitting guard must remain visible.
+- Crash-rate preservation must remain visible.
+- Failure visibility must remain preserved.
+- Automatic kernel replacement remains disabled.
+- Kernel mutation remains disabled.
+- Do not treat benchmark success as biological validation.
+
+Command:
+    python -m pba.cli calibration-report
+
+Next target:
+- PBSA v2.5 evidence package hardening

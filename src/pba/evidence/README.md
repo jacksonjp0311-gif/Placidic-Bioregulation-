@@ -98,3 +98,10 @@ Added:
 - stress_validation_report.py
 
 The report emits safe-fail score, crash rate, stress advantage drift, stress failure surface, and no automatic replacement.
+
+## PBSA v2.4 calibration report
+
+Added:
+- calibration_report.py
+
+The report emits recommended thresholds, calibration score, safe-fail preservation, crash-rate preservation, overfitting guard status, and no automatic replacement.

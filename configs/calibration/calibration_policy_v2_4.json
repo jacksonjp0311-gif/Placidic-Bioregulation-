@@ -1,0 +1,34 @@
+{
+  "version": "PBSA-CalibrationPolicy-v2.4",
+  "policy_id": "calibration_policy_v2_4",
+  "description": "PBSA v2.4 calibration policy for tuning route thresholds without weakening safe-fail behavior.",
+  "source_reports": {
+    "routed_validation": "reports/validation/latest_routed_validation_report.json",
+    "external_validation": "reports/external_validation/latest_external_validation_report.json",
+    "stress_validation": "reports/stress_validation/latest_stress_validation_report.json"
+  },
+  "weights": {
+    "advantage": 1.0,
+    "preservation": 1.0,
+    "safe_fail": 1.5,
+    "failure_penalty": 0.25,
+    "overfitting_penalty": 0.5,
+    "crash_penalty": 2.0,
+    "manual_review_penalty": 0.05
+  },
+  "minimums": {
+    "safe_fail_score": 1.0,
+    "crash_rate": 0.0,
+    "preservation_score": 0.8
+  },
+  "overfitting_tolerance": 0.75,
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "calibration_is_biological_validation": false,
+  "calibration_is_medical_safety": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}
