@@ -9,8 +9,8 @@ def build_publication_abstract() -> str:
         "validation, stress/adversarial validation, threshold calibration, evidence "
         "package hardening, reproducibility replay, and release-candidate audit "
         "surfaces. PBSA is a software research artifact only: it is not medical "
-        "guidance, biological validation, clinical safety evidence, treatment advice, "
-        "or proof of a physiological mechanism."
+        "guidance, not biological validation, not clinical safety evidence, not "
+        "treatment advice, and not proof of a physiological mechanism."
     )
 
 
