@@ -1,5 +1,7 @@
 # Placidic Bioregulation
 
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/386c7971-e31b-49c0-9bc3-d179e1e8675e" />
+
 Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v3.0
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
