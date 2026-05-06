@@ -1,24 +1,24 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.4
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.5
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository  
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
-Package version: 1.4.0  
-Current software architecture: PBSA v2.4 - Calibration and Threshold Tuning  
+Package version: 1.5.0  
+Current software architecture: PBSA v2.5 - Evidence Package Hardening  
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
 Current global decision: route_by_regime  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 91 passing  
+Current tests: 110 passing  
 Candidate execution: comparison harness only  
 Route execution: enabled through governed routing reports  
 Manual review required: true  
 Automatic kernel replacement: disabled  
 Kernel mutation: disabled  
-Next target: PBSA v2.5 - Evidence Package Hardening  
+Next target: PBSA v2.6 - Reproducibility Replay  
 
 ---
 
@@ -26,10 +26,10 @@ Next target: PBSA v2.5 - Evidence Package Hardening
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v2.4 | implemented and pushed |
+| Software architecture | PBSA v2.5 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 1.4.0 | active |
-| Test suite | 91 passing | active |
+| Python package | 1.5.0 | active |
+| Test suite | 110 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Champion/challenger decision | route_by_regime | active |
@@ -40,7 +40,7 @@ Next target: PBSA v2.5 - Evidence Package Hardening
 | Automatic kernel replacement | disabled | active |
 | Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v2.5 | evidence package hardening |
+| Next planned layer | PBSA v2.6 | reproducibility replay |
 
 ## Current architecture status
 
@@ -295,7 +295,7 @@ Current published status:
 
 - PBSA v2.0 regime-routed architecture added.
 - PBA v1.4 theory/governance docs archived.
-- Package version: 1.4.0.
+- Package version: 1.5.0.
 - 44 tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
@@ -345,13 +345,13 @@ This section preserves stable README anchors required by the executable RCC docu
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v2.4
+- PBSA_VERSION: PBSA-v2.5
 - PBA_VERSION: PBA-v1.4
-- package version: 1.4.0
+- package version: 1.5.0
 - current global decision: route_by_regime
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
-- current tests: 91 passing
+- current tests: 110 passing
 - candidate execution allowed: comparison harness only
 - route execution enabled: governed reports only
 - manual review required: true
@@ -360,7 +360,7 @@ Current canonical versions:
 - current docs archive: docs/theory and docs/architecture
 - current routing policy: configs/routing/regime_route_policy_v2_0.json
 - latest routed suite report: reports/routing/latest_routed_suite_report.json
-- next target: PBSA v2.5 evidence package hardening
+- next target: PBSA v2.6 reproducibility replay
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, champion/challenger evidence, routed-suite evidence, route policy, route selector behavior, docs/theory, docs/architecture, or evolution reports change.
 
@@ -746,3 +746,41 @@ Command:
 
 Next target:
 - PBSA v2.5 evidence package hardening
+
+
+## PBSA v2.5 Evidence Package Hardening Upgrade
+
+This repository now includes the PBSA v2.5 evidence package hardening layer.
+
+Added surfaces:
+- evidence package policy config
+- evidence artifact manifest config
+- hash manifest generator
+- report-chain verifier
+- ledger-continuity verifier
+- RCC anchor verifier
+- downgrade-lock verifier
+- failure-surface verifier
+- evidence package compiler
+- evidence package report
+- CLI command for evidence package reports
+- docs/theory PBSA v2.5 archive
+- docs/architecture PBSA v2.5 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- Evidence packaging is not biological validation.
+- Auditability is not medical safety.
+- Reproducibility is not mechanism proof.
+- Evidence packages must not hide failures.
+- Downgrade locks must remain visible.
+- Failure surfaces must remain visible.
+- Automatic kernel replacement remains disabled.
+- Kernel mutation remains disabled.
+- Do not treat benchmark success as biological validation.
+
+Command:
+    python -m pba.cli evidence-package-report
+
+Next target:
+- PBSA v2.6 reproducibility replay

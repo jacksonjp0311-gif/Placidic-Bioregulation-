@@ -15,6 +15,7 @@ from pba.evidence.routed_validation_report import build_routed_validation_report
 from pba.evidence.external_validation_report import build_external_validation_report
 from pba.evidence.stress_validation_report import build_stress_validation_report
 from pba.evidence.calibration_report import build_calibration_report
+from pba.evidence.evidence_package_report import build_evidence_package_report
 from pba.evolution.candidate_readiness import build_candidate_readiness_report
 from pba.evolution.champion_challenger import compare_champion_challenger
 from pba.evolution.evolution_policy import load_evolution_policy
@@ -59,6 +60,8 @@ def main() -> int:
     sv = sub.add_parser("stress-validation-report")
 
     cal = sub.add_parser("calibration-report")
+
+    ep = sub.add_parser("evidence-package-report")
 
     ck = sub.add_parser("compare-kernels")
     ck.add_argument("--champion-summary", default=None)
@@ -131,6 +134,11 @@ def main() -> int:
 
     if args.cmd == "calibration-report":
         result = build_calibration_report(root)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "evidence-package-report":
+        result = build_evidence_package_report(root)
         print(json.dumps(result, indent=2))
         return 0
 

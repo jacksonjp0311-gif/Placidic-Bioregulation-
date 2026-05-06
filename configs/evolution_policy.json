@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.4",
+  "version": "PBSA-EvolutionPolicy-v2.5",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -41,7 +41,15 @@
     "safe_fail_preservation_required": true,
     "crash_rate_preservation_required": true,
     "overfitting_guard_required": true,
-    "failure_visibility_required": true
+    "failure_visibility_required": true,
+    "evidence_package_policy_required": true,
+    "artifact_manifest_required": true,
+    "hash_manifest_required": true,
+    "report_chain_required": true,
+    "ledger_continuity_required": true,
+    "rcc_anchor_verification_required": true,
+    "downgrade_locks_required": true,
+    "failure_surface_status_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -73,7 +81,7 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "calibration_threshold_tuning",
+  "architecture_mode": "evidence_package_hardening",
   "global_decision": "route_by_regime",
   "routing_is_global_replacement": false,
   "validation_decision_required": true,
@@ -94,5 +102,14 @@
   "safe_fail_preservation_required": true,
   "overfitting_guard_required": true,
   "calibration_is_biological_validation": false,
-  "calibration_is_medical_safety": false
+  "calibration_is_medical_safety": false,
+  "evidence_package_required": true,
+  "hash_manifest_required": true,
+  "report_chain_required": true,
+  "ledger_continuity_required": true,
+  "rcc_anchor_verification_required": true,
+  "downgrade_lock_verification_required": true,
+  "failure_surface_verification_required": true,
+  "evidence_packaging_is_biological_validation": false,
+  "evidence_packaging_is_medical_safety": false
 }

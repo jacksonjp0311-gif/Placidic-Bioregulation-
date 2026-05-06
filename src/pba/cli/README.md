@@ -66,3 +66,8 @@ Added:
 
 Added:
 - python -m pba.cli calibration-report
+
+## PBSA v2.5 CLI command
+
+Added:
+- python -m pba.cli evidence-package-report

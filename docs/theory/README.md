@@ -87,3 +87,8 @@ Added:
 
 Added:
 - pbsa_v2_4_calibration_threshold_tuning.md
+
+## PBSA v2.5 theory addition
+
+Added:
+- pbsa_v2_5_evidence_package_hardening.md

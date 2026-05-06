@@ -96,3 +96,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_4_calibration_threshold_tuning.md
 - docs/architecture/pbsa_v2_4_implementation_map.md
+
+## PBSA v2.5 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_5_evidence_package_hardening.md
+- docs/architecture/pbsa_v2_5_implementation_map.md

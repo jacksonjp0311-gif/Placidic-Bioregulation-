@@ -105,3 +105,10 @@ Added:
 - calibration_report.py
 
 The report emits recommended thresholds, calibration score, safe-fail preservation, crash-rate preservation, overfitting guard status, and no automatic replacement.
+
+## PBSA v2.5 evidence package report
+
+Added:
+- evidence_package_report.py
+
+The report emits artifact hashes, report-chain status, ledger-continuity status, RCC anchor verification, downgrade-lock verification, and failure-surface status.

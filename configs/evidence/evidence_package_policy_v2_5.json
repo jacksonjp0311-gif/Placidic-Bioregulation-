@@ -1,0 +1,34 @@
+{
+  "version": "PBSA-EvidencePackagePolicy-v2.5",
+  "policy_id": "evidence_package_policy_v2_5",
+  "description": "PBSA v2.5 evidence package hardening policy.",
+  "required_verifiers": [
+    "hash_manifest",
+    "report_chain",
+    "ledger_continuity",
+    "rcc_anchor_verification",
+    "downgrade_lock_verification",
+    "failure_surface_verification"
+  ],
+  "required_decision_locks": {
+    "automatic_kernel_replacement_allowed": false,
+    "kernel_mutation_allowed": false,
+    "non_claim_locks_preserved": true
+  },
+  "required_rcc_anchors": [
+    "Current benchmark results",
+    "Do not treat benchmark success as biological validation",
+    "PART I - Human README",
+    "PART II - AI / Agent README",
+    "Required local verification"
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "evidence_packaging_is_biological_validation": false,
+  "evidence_packaging_is_medical_safety": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

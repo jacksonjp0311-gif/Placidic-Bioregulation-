@@ -110,3 +110,11 @@ Added:
 - configs/calibration/threshold_grid_v2_4.json
 
 These configs tune route thresholds while preserving safe-fail behavior, crash-rate visibility, overfitting guards, and non-claim locks.
+
+## PBSA v2.5 evidence package config
+
+Added:
+- configs/evidence/evidence_package_policy_v2_5.json
+- configs/evidence/evidence_artifact_manifest_v2_5.json
+
+These configs declare required evidence artifacts, report-chain verification, downgrade locks, and RCC anchor checks.

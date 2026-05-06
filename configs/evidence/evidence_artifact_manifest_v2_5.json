@@ -1,0 +1,93 @@
+{
+  "version": "PBSA-EvidenceArtifactManifest-v2.5",
+  "manifest_id": "evidence_artifact_manifest_v2_5",
+  "required_artifacts": [
+    {
+      "path": "configs/routing/regime_route_policy_v2_0.json",
+      "role": "route_policy",
+      "required": true
+    },
+    {
+      "path": "configs/validation/routed_validation_policy_v2_1.json",
+      "role": "routed_validation_policy",
+      "required": true
+    },
+    {
+      "path": "configs/external_validation_suite_v2_2.json",
+      "role": "external_suite",
+      "required": true
+    },
+    {
+      "path": "configs/validation/external_validation_policy_v2_2.json",
+      "role": "external_validation_policy",
+      "required": true
+    },
+    {
+      "path": "configs/stress_validation_suite_v2_3.json",
+      "role": "stress_suite",
+      "required": true
+    },
+    {
+      "path": "configs/validation/stress_validation_policy_v2_3.json",
+      "role": "stress_validation_policy",
+      "required": true
+    },
+    {
+      "path": "configs/calibration/calibration_policy_v2_4.json",
+      "role": "calibration_policy",
+      "required": true
+    },
+    {
+      "path": "configs/calibration/threshold_grid_v2_4.json",
+      "role": "threshold_grid",
+      "required": true
+    },
+    {
+      "path": "reports/routing/latest_routed_suite_report.json",
+      "role": "routed_suite_report",
+      "required": true
+    },
+    {
+      "path": "reports/validation/latest_routed_validation_report.json",
+      "role": "routed_validation_report",
+      "required": true
+    },
+    {
+      "path": "reports/external_validation/latest_external_validation_report.json",
+      "role": "external_validation_report",
+      "required": true
+    },
+    {
+      "path": "reports/stress_validation/latest_stress_validation_report.json",
+      "role": "stress_validation_report",
+      "required": true
+    },
+    {
+      "path": "reports/calibration/latest_calibration_report.json",
+      "role": "calibration_report",
+      "required": true
+    },
+    {
+      "path": "ledgers/pba_decision_ledger.jsonl",
+      "role": "decision_ledger",
+      "required": true
+    },
+    {
+      "path": "README.md",
+      "role": "root_readme",
+      "required": true
+    },
+    {
+      "path": "docs/theory/pbsa_v2_5_evidence_package_hardening.md",
+      "role": "theory_archive",
+      "required": false
+    },
+    {
+      "path": "docs/architecture/pbsa_v2_5_implementation_map.md",
+      "role": "architecture_archive",
+      "required": false
+    }
+  ],
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false
+}
