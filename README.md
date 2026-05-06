@@ -12,13 +12,13 @@ Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity
 Current global decision: route_by_regime  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 152 passing  
+Current tests: 153 passing  
 Candidate execution: comparison harness only  
 Route execution: enabled through governed routing reports  
 Manual review required: true  
 Automatic kernel replacement: disabled  
 Kernel mutation: disabled  
-Next target: archive release tag and publish README  
+Next target: create and push release tag  
 
 ---
 
@@ -29,7 +29,7 @@ Next target: archive release tag and publish README
 | Software architecture | PBSA v3.0 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
 | Python package | 3.0.0 | active |
-| Test suite | 152 passing | active |
+| Test suite | 153 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Champion/challenger decision | route_by_regime | active |
@@ -44,42 +44,58 @@ Next target: archive release tag and publish README
 
 ## Current architecture status
 
-PBSA v2.0 is a regime-routed architecture. It operationalizes the PBSA v1.4 decision `route_by_regime` by selecting admissible routes from detected regime evidence rather than forcing one universal kernel to win everywhere.
+PBSA v3.0 is the public research package layer. It freezes the replay-verified and release-candidate-ready PBSA stack into a public computational research artifact.
 
-PBSA v2.0 builds on:
+The current stack is:
 
-- PBSA v1.2 multi-label regime detection,
-- PBSA v1.3 holdout and candidate-readiness evidence,
-- PBSA v1.4 champion/challenger governance,
-- the v1.4 decision `route_by_regime`,
-- and the non-claim locks that forbid medical, biological-law, and mechanism-proof overclaiming.
+- PBA v1.4: Evidence Feedback and Regime-Aware Placidity.
+- PBSA v2.0: regime-routed PBSA.
+- PBSA v2.1: routed-suite validation.
+- PBSA v2.2: external-domain validation.
+- PBSA v2.3: stress/adversarial validation.
+- PBSA v2.4: calibration and threshold tuning.
+- PBSA v2.5: evidence package hardening.
+- PBSA v2.6: reproducibility replay.
+- PBSA v2.7: release candidate audit bundle.
+- PBSA v3.0: public research package.
 
-The current architecture selects among governed route families:
+Current generated evidence state:
 
-- baseline routes,
-- champion/PBA routes,
-- candidate routes under review,
-- reject/insufficient-evidence routes.
+- Routed-suite decision: route_by_regime
+- Routed-validation decision: validate_routing
+- External-validation decision: external_validate_with_caution
+- Stress-validation decision: stress_validate_with_caution
+- Calibration decision: calibrate_with_caution
+- Evidence-package decision: evidence_package_valid
+- Replay decision: replay_valid_with_timestamp_drift
+- Release-candidate decision: release_candidate_ready
+- Public-package decision: public_package_ready
+- Public-package readiness: true
+- Semantic drift count: 0
+- Expected timestamp/hash drift count: 6
+- Release tag metadata: v3.0.0-public-research-package
 
-PBSA v2.0 does not replace the PBA kernel globally. It does not promote a candidate globally. It routes locally by regime evidence and preserves global evidence, downgrade discipline, RCC surfaces, and non-claim boundaries.
+PBSA v3.0 does not replace the PBA kernel globally. It does not promote a candidate globally. It publishes a computational audit package with explicit limitations, claim-boundary locks, downgrade locks, failure-surface visibility, reproducibility commands, and RCC-aligned README surfaces.
 
----
-
-# PART I - Human README
+Automatic kernel replacement remains disabled. Kernel mutation remains disabled.
 
 ## Executive summary
 
-Placidic Bioregulation is a runnable Python research scaffold that now implements PBSA v2.0: a conservative regime-routed architecture for selecting admissible control routes under declared toy benchmark conditions.
+Placidic Bioregulation is a runnable Python research repository that now implements PBSA v3.0: a public computational research package for evidence-feedback control-policy evaluation.
 
-The project moved through a full evidence loop:
+The project moved through a full governed evidence loop:
 
-theory -> executable software -> tests -> benchmark evidence -> downgrade -> multi-label diagnosis -> holdout expansion -> candidate readiness -> champion/challenger comparison -> regime routing.
+theory -> executable software -> tests -> benchmark evidence -> downgrade -> multi-label diagnosis -> holdout expansion -> candidate readiness -> champion/challenger comparison -> regime routing -> routed validation -> external validation -> stress validation -> calibration -> evidence packaging -> reproducibility replay -> release-candidate audit -> public research package.
 
-The important current result is not ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œPBA wins everywhere.ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â The important result is that PBSA learned not to force a single universal controller. The current architecture routes by regime while preserving baseline wins, holdout weakness, candidate restrictions, and non-claim boundaries.
+The important current result is not "PBA wins everywhere." The important result is that PBSA preserves mixed evidence, baseline wins, holdout weakness, failure surfaces, timestamp drift, manual review, claim boundaries, and non-claim locks while making the repository reproducible and auditable.
+
+Current public-package decision: `public_package_ready`.  
+Current public-package readiness: `true`.  
+Prepared release tag: `v3.0.0-public-research-package`.
 
 ## Current finding
 
-The current evidence state is mixed and conservative.
+The current evidence state is public-package ready but still conservative.
 
 Original suite:
 
@@ -93,24 +109,21 @@ Holdout suite:
 - The holdout run broadened the evidence surface and showed weak generalization.
 - This supports routing and validation, not global candidate promotion.
 
-Champion/challenger report:
+Routing and validation stack:
 
-- Decision: route_by_regime.
-- Promotion status: no_automatic_promotion.
-- Automatic kernel replacement: false.
-- Kernel mutation: false.
-
-Routed suite report:
-
-- Decision: route_by_regime.
-- Manual review required: true.
-- Automatic kernel replacement: false.
-- Kernel mutation: false.
-- Next required step: PBSA v2.1 routed-suite validation.
+- Routed-suite decision: `route_by_regime`.
+- Routed-validation decision: `validate_routing`.
+- External-validation decision: `external_validate_with_caution`.
+- Stress-validation decision: `stress_validate_with_caution`.
+- Calibration decision: `calibrate_with_caution`.
+- Evidence-package decision: `evidence_package_valid`.
+- Replay decision: `replay_valid_with_timestamp_drift`.
+- Release-candidate decision: `release_candidate_ready`.
+- Public-package decision: `public_package_ready`.
 
 Current conclusion:
 
-The system is working because it did not over-promote itself. PBSA preserved baseline wins, preserved holdout weakness, avoided automatic kernel replacement, and converted `route_by_regime` into executable routing architecture.
+PBSA is functioning as a conservative, evidence-governed, regime-routed research scaffold. It is now packaged for public computational audit. The public package is not biological validation, not medical guidance, not clinical safety evidence, and not proof of a physiological mechanism.
 
 ## Current benchmark results
 
@@ -178,20 +191,25 @@ Regime-routed PBSA:
 
 ## How to interpret the current result
 
-A PBA-C original-suite result, PBA-D holdout result, and `route_by_regime` routing decision are not failures. They mean the evidence system is doing its job.
+A PBA-C original-suite result, PBA-D holdout result, `route_by_regime` routing decision, replay-valid audit state, and public-package-ready state are not global proof claims. They mean the evidence system is doing its job.
 
 The correct interpretation is:
 
 - PBSA implementation is working.
-- Tests are passing.
+- 153 tests are passing.
+- RCC README tests are passing.
 - Evidence generation is working.
 - Original-suite downgrade is preserved.
 - Holdout weakness is preserved.
 - Candidate specs were generated but not globally promoted.
 - Champion/challenger comparison concluded routing is safer than replacement.
-- PBSA v2.0 now routes by regime evidence.
+- PBSA routes by regime evidence.
+- External, stress, calibration, evidence-package, replay, release-candidate, and public-package surfaces are now present.
+- Semantic drift is clear at `0`.
+- Expected timestamp/hash drift remains visible at `6`.
+- Public-package readiness is `true`.
 - Stronger biological or medical claims are not justified.
-- The next valid step is PBSA v2.1 routed-suite validation.
+- The next valid step is to create and push the release tag `v3.0.0-public-research-package`.
 
 ## What this project is
 
@@ -205,6 +223,14 @@ The correct interpretation is:
 - A champion/challenger governance layer.
 - A regime-routing layer.
 - A route-evidence and routed-suite reporting layer.
+- A routed-validation layer.
+- An external-domain validation layer.
+- A stress/adversarial validation layer.
+- A calibration and threshold-tuning layer.
+- An evidence-package hardening layer.
+- A reproducibility replay layer.
+- A release-candidate audit bundle layer.
+- A public research package layer.
 - A repository organized for human and AI readability using RCC-style mini READMEs.
 
 ## What this project is not
@@ -230,6 +256,10 @@ From the repository root:
 Run tests:
 
     python -m unittest discover -s tests
+
+Run RCC README contract tests:
+
+    python -m unittest tests.test_rcc_readmes -v
 
 Run one benchmark:
 
@@ -259,9 +289,37 @@ Generate routed-suite report:
 
     python -m pba.cli routed-suite-report
 
-Generate evolution report:
+Generate routed-validation report:
 
-    python -m pba.cli diagnose-evolution
+    python -m pba.cli routed-validation-report
+
+Generate external-validation report:
+
+    python -m pba.cli external-validation-report
+
+Generate stress-validation report:
+
+    python -m pba.cli stress-validation-report
+
+Generate calibration report:
+
+    python -m pba.cli calibration-report
+
+Generate evidence-package report:
+
+    python -m pba.cli evidence-package-report
+
+Generate replay-audit report:
+
+    python -m pba.cli replay-audit-report
+
+Generate release-candidate report:
+
+    python -m pba.cli release-candidate-report
+
+Generate public-package report:
+
+    python -m pba.cli public-package-report
 
 Run the local automation script:
 
@@ -271,15 +329,24 @@ Dump the repo structure:
 
     powershell -ExecutionPolicy Bypass -File .\scripts\repo_dump_light.ps1
 
+Prepared release tag:
+
+    v3.0.0-public-research-package
+
 ## Repository map for humans
 
-- configs: declared suite, domains, holdout domains, routing policies, candidate configs, parameters, baseline settings, calibration grid, and metrics.
-- docs: theory, architecture, RCC context map, and benchmark protocol.
+- configs: declared suite, domains, holdout domains, routing policies, validation policies, external validation configs, stress validation configs, calibration policies, evidence-package policies, replay policies, release policies, public-package policies, candidate configs, parameters, baseline settings, calibration grid, and metrics.
+- docs: theory, architecture, RCC context map, benchmark protocol, and versioned PBSA implementation maps.
 - src/pba: Python implementation.
 - src/pba/routing: PBSA v2.0 route registry, selector, eligibility gates, and routed runner.
+- src/pba/evidence: generated evidence reports, manifests, suite summaries, holdout summaries, route evidence, validation reports, replay reports, release reports, and public-package reports.
+- src/pba/evidence_hardening: PBSA v2.5 hash manifest, report-chain, ledger-continuity, RCC-anchor, downgrade-lock, and failure-surface verifiers.
+- src/pba/replay: PBSA v2.6 reproducibility replay, decision replay, hash drift, replay lock verification, and replay audit logic.
+- src/pba/release: PBSA v2.7 release-candidate audit bundle generation.
+- src/pba/public_package: PBSA v3.0 public research package generation.
 - tests: unit tests and RCC README coverage checks.
 - runs: generated benchmark run artifacts.
-- reports: generated suite summaries, holdout summaries, candidate-readiness reports, champion/challenger reports, routing reports, and route evidence.
+- reports: generated suite summaries, holdout summaries, candidate-readiness reports, champion/challenger reports, routing reports, validation reports, evidence packages, replay audit reports, release candidate reports, and public package reports.
 - ledgers: local runtime and decision continuity records.
 - scripts: local helper scripts.
 
@@ -293,39 +360,44 @@ Remote:
 
 Current published status:
 
-- PBSA v2.0 regime-routed architecture added.
+- PBSA v3.0 public research package added.
 - PBA v1.4 theory/governance docs archived.
 - Package version: 3.0.0.
-- 44 tests passing.
+- 153 tests passing.
+- RCC README tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
 - Latest holdout summary generated.
 - Latest candidate-readiness report generated.
 - Latest champion/challenger report generated.
 - Latest routed-suite report generated.
+- Latest routed-validation report generated.
+- Latest external-validation report generated.
+- Latest stress-validation report generated.
+- Latest calibration report generated.
+- Latest evidence-package report generated.
+- Latest replay-audit report generated.
+- Latest release-candidate report generated.
+- Latest public-package report generated.
 - Current global decision: route_by_regime.
+- Public package decision: public_package_ready.
+- Public package readiness: true.
 - Manual review required: true.
 - Candidate execution: comparison harness only.
 - Route execution: governed routing report only.
 - Automatic kernel replacement: disabled.
 - Kernel mutation: disabled.
-- Next target: PBSA v2.1 routed-suite validation.
+- Next target: create and push release tag `v3.0.0-public-research-package`.
 
 Before future pushes, verify:
 
 - tests pass,
-- original suite summary exists,
-- holdout summary exists if holdout behavior changed,
-- candidate-readiness report exists if candidate semantics changed,
-- champion/challenger report exists if candidate comparison changed,
-- routed-suite report exists if routing behavior changed,
+- RCC README tests pass,
+- generated reports are current if behavior changed,
 - root README is current,
 - mini READMEs exist,
 - docs/theory and docs/architecture reflect current versioning,
 - no medical or biological-law claim entered the docs.
-
----
-
 
 ## RCC Compatibility Anchors
 
@@ -351,7 +423,7 @@ Current canonical versions:
 - current global decision: route_by_regime
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
-- current tests: 152 passing
+- current tests: 153 passing
 - candidate execution allowed: comparison harness only
 - route execution enabled: governed reports only
 - manual review required: true
@@ -360,7 +432,17 @@ Current canonical versions:
 - current docs archive: docs/theory and docs/architecture
 - current routing policy: configs/routing/regime_route_policy_v2_0.json
 - latest routed suite report: reports/routing/latest_routed_suite_report.json
-- next target: archive release tag and publish README
+
+- latest routed validation report: reports/validation/latest_routed_validation_report.json
+- latest external validation report: reports/external_validation/latest_external_validation_report.json
+- latest stress validation report: reports/stress_validation/latest_stress_validation_report.json
+- latest calibration report: reports/calibration/latest_calibration_report.json
+- latest evidence package report: reports/evidence_packages/latest_evidence_package_report.json
+- latest replay audit report: reports/replay/latest_replay_audit_report.json
+- latest release candidate report: reports/release/latest_release_candidate_report.json
+- latest public package report: reports/public_package/latest_public_package_report.json
+- prepared release tag: v3.0.0-public-research-package
+- next target: create and push release tag
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, champion/challenger evidence, routed-suite evidence, route policy, route selector behavior, docs/theory, docs/architecture, or evolution reports change.
 
@@ -420,6 +502,15 @@ PBSA requires the following before any benchmark, candidate, or route interpreta
 - champion/challenger report when candidate comparison is discussed,
 - route evidence when routing is discussed,
 - routed-suite report when routing behavior is discussed,
+
+- routed-validation report when routed validation is discussed,
+- external-validation report when external behavior is discussed,
+- stress-validation report when adversarial/stress behavior is discussed,
+- calibration report when threshold tuning is discussed,
+- evidence-package report when audit traceability is discussed,
+- replay-audit report when reproducibility replay is discussed,
+- release-candidate report when public audit readiness is discussed,
+- public-package report when public release/readiness is discussed,
 - non-claim boundary.
 
 ## Canonical runtime chain
@@ -445,6 +536,11 @@ Use this routing map before editing:
 - Modify src/pba/routing only when changing route registry, route selector, route eligibility, or routed runner.
 - Modify src/pba/benchmarks only when changing orchestration.
 - Modify src/pba/cli only when changing command-line behavior.
+
+- Modify src/pba/evidence_hardening only when changing evidence-package verification, hash manifests, report-chain checks, ledger-continuity checks, RCC-anchor checks, downgrade-lock checks, or failure-surface verifiers.
+- Modify src/pba/replay only when changing reproducibility replay, decision replay, hash drift, replay locks, or replay audit behavior.
+- Modify src/pba/release only when changing release-candidate audit bundles, evidence index, claim boundaries, command surface, failure-surface index, or release readiness.
+- Modify src/pba/public_package only when changing public abstract, evidence summary, public limitations, public command surface, public claim boundaries, or public package readiness.
 - Modify tests whenever behavior changes.
 - Modify folder README whenever folder purpose, hooks, artifacts, or invariants change.
 
@@ -484,9 +580,15 @@ Current routed-suite decision:
 
 route_by_regime
 
+Current public-package decision:
+
+public_package_ready
+
 Current evidence conclusion:
 
-The current repository is functioning as a conservative regime-routed research scaffold. PBA shows local advantage in one original-suite domain, loses to a simple proportional baseline in two original-suite domains, and does not yet generalize strongly under the v1.3 holdout suite. PBSA v1.4 showed that the safer architecture is `route_by_regime`, not global replacement. PBSA v2.0 operationalizes that result by selecting admissible baseline, champion, candidate, or reject routes under evidence gates. This supports routed-suite validation next, not biological or medical overclaim.
+The current repository is functioning as a conservative regime-routed public research package. PBA shows local advantage in one original-suite domain, loses to a simple proportional baseline in two original-suite domains, and does not yet generalize strongly under the v1.3 holdout suite. PBSA v1.4 showed that the safer architecture is `route_by_regime`, not global replacement. PBSA v2.0 operationalized routing. PBSA v2.1-v2.7 added routed validation, external validation, stress validation, calibration, evidence packaging, replay, and release-candidate audit packaging. PBSA v3.0 now exposes the system as a public computational research package with claim boundaries, limitations, command surfaces, evidence summaries, release metadata, and no automatic kernel replacement.
+
+This supports public computational audit and release-tag archiving, not biological validation, medical guidance, clinical safety, or physiological mechanism proof.
 
 AI agents must preserve this interpretation unless newer generated JSON artifacts exist and are explicitly used to update this README.
 
@@ -513,6 +615,7 @@ Before modifying code:
 After any meaningful patch, run:
 
     python -m unittest discover -s tests
+    python -m unittest tests.test_rcc_readmes -v
 
 If original benchmark behavior changed, also run:
 
@@ -531,6 +634,35 @@ If candidate comparison changed, also run:
 If routing behavior changed, also run:
 
     python -m pba.cli routed-suite-report
+    python -m pba.cli routed-validation-report
+
+If external validation behavior changed, also run:
+
+    python -m pba.cli external-validation-report
+
+If stress/adversarial behavior changed, also run:
+
+    python -m pba.cli stress-validation-report
+
+If calibration behavior changed, also run:
+
+    python -m pba.cli calibration-report
+
+If evidence-package behavior changed, also run:
+
+    python -m pba.cli evidence-package-report
+
+If replay behavior changed, also run:
+
+    python -m pba.cli replay-audit-report
+
+If release-candidate behavior changed, also run:
+
+    python -m pba.cli release-candidate-report
+
+If public-package behavior changed, also run:
+
+    python -m pba.cli public-package-report
 
 ## README maintenance rule
 
@@ -900,3 +1032,20 @@ Core public command:
 
 Prepared release tag:
     v3.0.0-public-research-package
+
+## PBSA v3.0 public package chain
+
+release-candidate report -> public package policy -> publication abstract -> evidence summary -> public limitations -> public claim boundaries -> public command surface -> release checklist -> public package report -> release tag metadata -> RCC refresh
+
+
+## Public release tag status
+
+Prepared release tag:
+
+    v3.0.0-public-research-package
+
+Current next action:
+
+    create and push release tag v3.0.0-public-research-package
+
+This tag marks PBSA v3.0 as a public computational research package. It does not mark biological validation, medical validation, clinical safety evidence, or physiological mechanism proof.
