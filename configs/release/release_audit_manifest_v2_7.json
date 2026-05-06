@@ -1,0 +1,24 @@
+{
+  "version": "PBSA-ReleaseAuditManifest-v2.7",
+  "manifest_id": "release_audit_manifest_v2_7",
+  "release_bundle_outputs": {
+    "release_candidate_report": "reports/release/latest_release_candidate_report.json",
+    "release_candidate_summary": "reports/release/latest_release_candidate_report.md",
+    "public_audit_index": "reports/release/latest_public_audit_index.md",
+    "evidence_index": "reports/release/latest_evidence_index.json",
+    "claim_boundary_table": "reports/release/latest_claim_boundary_table.json",
+    "failure_surface_index": "reports/release/latest_failure_surface_index.json",
+    "command_surface": "reports/release/latest_command_surface.json"
+  },
+  "source_reports": {
+    "routed_suite": "reports/routing/latest_routed_suite_report.json",
+    "routed_validation": "reports/validation/latest_routed_validation_report.json",
+    "external_validation": "reports/external_validation/latest_external_validation_report.json",
+    "stress_validation": "reports/stress_validation/latest_stress_validation_report.json",
+    "calibration": "reports/calibration/latest_calibration_report.json",
+    "evidence_package": "reports/evidence_packages/latest_evidence_package_report.json",
+    "replay_audit": "reports/replay/latest_replay_audit_report.json"
+  },
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false
+}

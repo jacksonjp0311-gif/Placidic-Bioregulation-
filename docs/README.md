@@ -108,3 +108,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_6_reproducibility_replay.md
 - docs/architecture/pbsa_v2_6_implementation_map.md
+
+## PBSA v2.7 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_7_release_candidate_audit_bundle.md
+- docs/architecture/pbsa_v2_7_implementation_map.md

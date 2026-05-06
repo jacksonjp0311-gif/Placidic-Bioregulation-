@@ -119,3 +119,10 @@ Added:
 - replay_audit_report.py
 
 The report emits decision replay status, semantic drift, expected timestamp drift, ledger replay status, RCC replay status, downgrade-lock replay, and no automatic replacement.
+
+## PBSA v2.7 release candidate report
+
+Added:
+- release_candidate_report.py
+
+The report emits release readiness, evidence index, claim-boundary table, failure-surface index, command surface, downgrade locks, and no automatic replacement.

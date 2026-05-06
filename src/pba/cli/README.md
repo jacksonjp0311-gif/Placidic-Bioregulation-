@@ -76,3 +76,8 @@ Added:
 
 Added:
 - python -m pba.cli replay-audit-report
+
+## PBSA v2.7 CLI command
+
+Added:
+- python -m pba.cli release-candidate-report

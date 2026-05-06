@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.6",
+  "version": "PBSA-EvolutionPolicy-v2.7",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -57,7 +57,14 @@
     "ledger_replay_required": true,
     "rcc_replay_required": true,
     "downgrade_lock_replay_required": true,
-    "failure_surface_replay_required": true
+    "failure_surface_replay_required": true,
+    "release_policy_required": true,
+    "release_audit_manifest_required": true,
+    "evidence_index_required": true,
+    "claim_boundary_table_required": true,
+    "failure_surface_index_required": true,
+    "command_surface_required": true,
+    "release_readiness_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -89,7 +96,7 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "reproducibility_replay",
+  "architecture_mode": "release_candidate_audit_bundle",
   "global_decision": "route_by_regime",
   "routing_is_global_replacement": false,
   "validation_decision_required": true,
@@ -128,5 +135,14 @@
   "downgrade_lock_replay_required": true,
   "failure_surface_replay_required": true,
   "replay_is_biological_validation": false,
-  "replay_is_medical_safety": false
+  "replay_is_medical_safety": false,
+  "release_candidate_bundle_required": true,
+  "public_audit_index_required": true,
+  "claim_boundary_table_required": true,
+  "evidence_index_required": true,
+  "failure_surface_index_required": true,
+  "command_surface_required": true,
+  "release_readiness_required": true,
+  "release_candidate_is_biological_validation": false,
+  "release_candidate_is_medical_safety": false
 }

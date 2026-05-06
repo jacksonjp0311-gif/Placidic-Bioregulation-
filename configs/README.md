@@ -126,3 +126,11 @@ Added:
 - configs/replay/replay_artifact_manifest_v2_6.json
 
 These configs define evidence package replay, decision replay, hash drift detection, ledger replay, RCC replay, and downgrade-lock replay.
+
+## PBSA v2.7 release candidate config
+
+Added:
+- configs/release/release_candidate_policy_v2_7.json
+- configs/release/release_audit_manifest_v2_7.json
+
+These configs declare public audit surfaces, clone/run commands, evidence indexes, claim boundaries, failure-surface indexes, and release readiness checks.

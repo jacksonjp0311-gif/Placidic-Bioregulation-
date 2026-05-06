@@ -1,0 +1,37 @@
+{
+  "version": "PBSA-ReleaseCandidatePolicy-v2.7",
+  "policy_id": "release_candidate_policy_v2_7",
+  "description": "PBSA v2.7 release candidate audit bundle policy.",
+  "source_replay_report": "reports/replay/latest_replay_audit_report.json",
+  "source_evidence_package": "reports/evidence_packages/latest_evidence_package_report.json",
+  "required_public_surfaces": [
+    "clone_run_commands",
+    "evidence_index",
+    "claim_boundary_table",
+    "failure_surface_index",
+    "release_checklist",
+    "downgrade_locks",
+    "limitations"
+  ],
+  "required_commands": [
+    "python -m unittest discover -s tests",
+    "python -m unittest tests.test_rcc_readmes -v",
+    "python -m pba.cli routed-suite-report",
+    "python -m pba.cli routed-validation-report",
+    "python -m pba.cli external-validation-report",
+    "python -m pba.cli stress-validation-report",
+    "python -m pba.cli calibration-report",
+    "python -m pba.cli evidence-package-report",
+    "python -m pba.cli replay-audit-report",
+    "python -m pba.cli release-candidate-report"
+  ],
+  "release_candidate_is_biological_validation": false,
+  "release_candidate_is_medical_safety": false,
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

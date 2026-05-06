@@ -97,3 +97,8 @@ Added:
 
 Added:
 - pbsa_v2_6_reproducibility_replay.md
+
+## PBSA v2.7 theory addition
+
+Added:
+- pbsa_v2_7_release_candidate_audit_bundle.md
