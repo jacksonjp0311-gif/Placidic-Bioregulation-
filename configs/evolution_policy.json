@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.5",
+  "version": "PBSA-EvolutionPolicy-v2.6",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -49,7 +49,15 @@
     "ledger_continuity_required": true,
     "rcc_anchor_verification_required": true,
     "downgrade_locks_required": true,
-    "failure_surface_status_required": true
+    "failure_surface_status_required": true,
+    "replay_policy_required": true,
+    "replay_artifact_manifest_required": true,
+    "decision_replay_required": true,
+    "hash_drift_status_required": true,
+    "ledger_replay_required": true,
+    "rcc_replay_required": true,
+    "downgrade_lock_replay_required": true,
+    "failure_surface_replay_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -81,7 +89,7 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "evidence_package_hardening",
+  "architecture_mode": "reproducibility_replay",
   "global_decision": "route_by_regime",
   "routing_is_global_replacement": false,
   "validation_decision_required": true,
@@ -111,5 +119,14 @@
   "downgrade_lock_verification_required": true,
   "failure_surface_verification_required": true,
   "evidence_packaging_is_biological_validation": false,
-  "evidence_packaging_is_medical_safety": false
+  "evidence_packaging_is_medical_safety": false,
+  "replay_required": true,
+  "decision_replay_required": true,
+  "hash_drift_detection_required": true,
+  "ledger_replay_required": true,
+  "rcc_replay_required": true,
+  "downgrade_lock_replay_required": true,
+  "failure_surface_replay_required": true,
+  "replay_is_biological_validation": false,
+  "replay_is_medical_safety": false
 }

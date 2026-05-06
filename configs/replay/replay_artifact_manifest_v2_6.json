@@ -1,0 +1,22 @@
+{
+  "version": "PBSA-ReplayArtifactManifest-v2.6",
+  "manifest_id": "replay_artifact_manifest_v2_6",
+  "source_reports": {
+    "routed_suite_report": "reports/routing/latest_routed_suite_report.json",
+    "routed_validation_report": "reports/validation/latest_routed_validation_report.json",
+    "external_validation_report": "reports/external_validation/latest_external_validation_report.json",
+    "stress_validation_report": "reports/stress_validation/latest_stress_validation_report.json",
+    "calibration_report": "reports/calibration/latest_calibration_report.json",
+    "evidence_package_report": "reports/evidence_packages/latest_evidence_package_report.json"
+  },
+  "source_configs": {
+    "route_policy": "configs/routing/regime_route_policy_v2_0.json",
+    "routed_validation_policy": "configs/validation/routed_validation_policy_v2_1.json",
+    "external_validation_policy": "configs/validation/external_validation_policy_v2_2.json",
+    "stress_validation_policy": "configs/validation/stress_validation_policy_v2_3.json",
+    "calibration_policy": "configs/calibration/calibration_policy_v2_4.json",
+    "evidence_package_policy": "configs/evidence/evidence_package_policy_v2_5.json"
+  },
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false
+}

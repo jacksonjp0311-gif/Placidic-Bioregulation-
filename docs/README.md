@@ -102,3 +102,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_5_evidence_package_hardening.md
 - docs/architecture/pbsa_v2_5_implementation_map.md
+
+## PBSA v2.6 documentation archive
+
+Added:
+- docs/theory/pbsa_v2_6_reproducibility_replay.md
+- docs/architecture/pbsa_v2_6_implementation_map.md

@@ -1,0 +1,33 @@
+{
+  "version": "PBSA-ReplayPolicy-v2.6",
+  "policy_id": "replay_policy_v2_6",
+  "description": "PBSA v2.6 reproducibility replay policy.",
+  "source_evidence_package": "reports/evidence_packages/latest_evidence_package_report.json",
+  "replay_sequence": [
+    "routed_suite_report",
+    "routed_validation_report",
+    "external_validation_report",
+    "stress_validation_report",
+    "calibration_report",
+    "evidence_package_report"
+  ],
+  "decision_fields": {
+    "routed_suite_report": "decision",
+    "routed_validation_report": "decision",
+    "external_validation_report": "decision",
+    "stress_validation_report": "decision",
+    "calibration_report": "decision",
+    "evidence_package_report": "decision"
+  },
+  "expected_timestamp_drift_allowed": true,
+  "semantic_drift_allowed": false,
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "replay_is_biological_validation": false,
+  "replay_is_medical_safety": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

@@ -71,3 +71,8 @@ Added:
 
 Added:
 - python -m pba.cli evidence-package-report
+
+## PBSA v2.6 CLI command
+
+Added:
+- python -m pba.cli replay-audit-report

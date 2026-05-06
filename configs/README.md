@@ -118,3 +118,11 @@ Added:
 - configs/evidence/evidence_artifact_manifest_v2_5.json
 
 These configs declare required evidence artifacts, report-chain verification, downgrade locks, and RCC anchor checks.
+
+## PBSA v2.6 replay config
+
+Added:
+- configs/replay/replay_policy_v2_6.json
+- configs/replay/replay_artifact_manifest_v2_6.json
+
+These configs define evidence package replay, decision replay, hash drift detection, ledger replay, RCC replay, and downgrade-lock replay.

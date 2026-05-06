@@ -112,3 +112,10 @@ Added:
 - evidence_package_report.py
 
 The report emits artifact hashes, report-chain status, ledger-continuity status, RCC anchor verification, downgrade-lock verification, and failure-surface status.
+
+## PBSA v2.6 replay audit report
+
+Added:
+- replay_audit_report.py
+
+The report emits decision replay status, semantic drift, expected timestamp drift, ledger replay status, RCC replay status, downgrade-lock replay, and no automatic replacement.
