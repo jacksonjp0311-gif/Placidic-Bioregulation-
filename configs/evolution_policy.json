@@ -1,5 +1,5 @@
 {
-  "version": "PBSA-EvolutionPolicy-v2.7",
+  "version": "PBSA-EvolutionPolicy-v3.0",
   "mode": "diagnostic_first",
   "kernel_mutation_allowed": false,
   "acceptance_rules": {
@@ -64,7 +64,14 @@
     "claim_boundary_table_required": true,
     "failure_surface_index_required": true,
     "command_surface_required": true,
-    "release_readiness_required": true
+    "release_readiness_required": true,
+    "public_package_policy_required": true,
+    "public_release_manifest_required": true,
+    "publication_abstract_required": true,
+    "evidence_summary_required": true,
+    "public_limitations_required": true,
+    "public_claim_boundaries_required": true,
+    "public_package_report_required": true
   },
   "score_policy": {
     "primary_metric": "cumulative_deviation",
@@ -96,7 +103,7 @@
   "candidate_execution_scope": "comparison_harness_only",
   "automatic_kernel_replacement_allowed": false,
   "promotion_requires_manual_review": true,
-  "architecture_mode": "release_candidate_audit_bundle",
+  "architecture_mode": "public_research_package",
   "global_decision": "route_by_regime",
   "routing_is_global_replacement": false,
   "validation_decision_required": true,
@@ -144,5 +151,14 @@
   "command_surface_required": true,
   "release_readiness_required": true,
   "release_candidate_is_biological_validation": false,
-  "release_candidate_is_medical_safety": false
+  "release_candidate_is_medical_safety": false,
+  "public_package_required": true,
+  "publication_abstract_required": true,
+  "evidence_summary_required": true,
+  "public_limitations_required": true,
+  "public_claim_boundaries_required": true,
+  "public_command_surface_required": true,
+  "release_tag_preparation_required": true,
+  "public_release_is_biological_validation": false,
+  "public_release_is_medical_safety": false
 }

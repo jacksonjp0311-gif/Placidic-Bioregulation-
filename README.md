@@ -1,24 +1,24 @@
 # Placidic Bioregulation
 
-Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v2.7
+Codex Delta Phi - Placidic Bioregulation Software Architecture PBSA v3.0
 
 Local-first executable research repository for the Placidic Bioregulation Algorithm PBA v1.4.
 
 Status: GitHub-published research repository  
 GitHub remote: https://github.com/jacksonjp0311-gif/Placidic-Bioregulation-  
-Package version: 1.7.0  
-Current software architecture: PBSA v2.7 - Release Candidate Audit Bundle  
+Package version: 3.0.0  
+Current software architecture: PBSA v3.0 - Public Research Package  
 Current theory layer: PBA v1.4 - Evidence Feedback and Regime-Aware Placidity  
 Current global decision: route_by_regime  
 Original suite classification: PBA-C  
 Holdout suite classification: PBA-D  
-Current tests: 137 passing  
+Current tests: 152 passing  
 Candidate execution: comparison harness only  
 Route execution: enabled through governed routing reports  
 Manual review required: true  
 Automatic kernel replacement: disabled  
 Kernel mutation: disabled  
-Next target: PBSA v3.0 - Public Research Package  
+Next target: archive release tag and publish README  
 
 ---
 
@@ -26,10 +26,10 @@ Next target: PBSA v3.0 - Public Research Package
 
 | Layer | Current version | Repository status |
 |---|---:|---|
-| Software architecture | PBSA v2.7 | implemented and pushed |
+| Software architecture | PBSA v3.0 | implemented and pushed |
 | Algorithm theory | PBA v1.4 | documented in docs/theory |
-| Python package | 1.7.0 | active |
-| Test suite | 137 passing | active |
+| Python package | 3.0.0 | active |
+| Test suite | 152 passing | active |
 | Original suite classification | PBA-C | active |
 | Holdout suite classification | PBA-D | active |
 | Champion/challenger decision | route_by_regime | active |
@@ -40,7 +40,7 @@ Next target: PBSA v3.0 - Public Research Package
 | Automatic kernel replacement | disabled | active |
 | Kernel mutation | disabled | active |
 | RCC documentation contract | passing | active |
-| Next planned layer | PBSA v3.0 | public research package |
+| Next planned layer | release tag | v3.0.0-public-research-package |
 
 ## Current architecture status
 
@@ -295,7 +295,7 @@ Current published status:
 
 - PBSA v2.0 regime-routed architecture added.
 - PBA v1.4 theory/governance docs archived.
-- Package version: 1.7.0.
+- Package version: 3.0.0.
 - 44 tests passing.
 - Original suite classification: PBA-C.
 - Holdout suite classification: PBA-D.
@@ -345,13 +345,13 @@ This section preserves stable README anchors required by the executable RCC docu
 
 Current canonical versions:
 
-- PBSA_VERSION: PBSA-v2.7
+- PBSA_VERSION: PBSA-v3.0
 - PBA_VERSION: PBA-v1.4
-- package version: 1.7.0
+- package version: 3.0.0
 - current global decision: route_by_regime
 - original suite classification: PBA-C
 - holdout suite classification: PBA-D
-- current tests: 137 passing
+- current tests: 152 passing
 - candidate execution allowed: comparison harness only
 - route execution enabled: governed reports only
 - manual review required: true
@@ -360,7 +360,7 @@ Current canonical versions:
 - current docs archive: docs/theory and docs/architecture
 - current routing policy: configs/routing/regime_route_policy_v2_0.json
 - latest routed suite report: reports/routing/latest_routed_suite_report.json
-- next target: PBSA v3.0 public research package
+- next target: archive release tag and publish README
 
 AI agents must update this README when version constants, suite evidence, holdout evidence, champion/challenger evidence, routed-suite evidence, route policy, route selector behavior, docs/theory, docs/architecture, or evolution reports change.
 
@@ -860,3 +860,43 @@ Command:
 
 Next target:
 - PBSA v3.0 public research package
+
+
+## PBSA v3.0 Public Research Package
+
+This repository now includes the PBSA v3.0 public research package layer.
+
+PBSA is a computational regime-routing and validation framework for evidence-feedback control policy evaluation. It includes internal routed validation, external-domain validation, stress/adversarial validation, calibration, evidence package hardening, reproducibility replay, release-candidate audit packaging, and public research package reporting.
+
+Public package surfaces:
+- publication abstract
+- evidence summary
+- public limitations
+- public claim-boundary table
+- public command surface
+- public package readiness verifier
+- release checklist
+- release tag metadata
+- public package report
+- docs/theory PBSA v3.0 archive
+- docs/architecture PBSA v3.0 implementation map
+- RCC mini README synchronization
+
+Important lock:
+- Public release is not biological validation.
+- Public release is not medical validation.
+- Public release is not clinical safety evidence.
+- Public package readiness is not mechanism proof.
+- Public audit readiness is not medical safety.
+- Claim boundaries must remain visible.
+- Failure surfaces must remain visible.
+- Downgrade locks must remain visible.
+- Automatic kernel replacement remains disabled.
+- Kernel mutation remains disabled.
+- Do not treat benchmark success as biological validation.
+
+Core public command:
+    python -m pba.cli public-package-report
+
+Prepared release tag:
+    v3.0.0-public-research-package

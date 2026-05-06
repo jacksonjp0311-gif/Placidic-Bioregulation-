@@ -1,0 +1,27 @@
+{
+  "version": "PBSA-PublicPackagePolicy-v3.0",
+  "policy_id": "public_package_policy_v3_0",
+  "description": "PBSA v3.0 public research package policy.",
+  "source_release_candidate_report": "reports/release/latest_release_candidate_report.json",
+  "source_replay_report": "reports/replay/latest_replay_audit_report.json",
+  "source_evidence_package": "reports/evidence_packages/latest_evidence_package_report.json",
+  "required_public_surfaces": [
+    "publication_abstract",
+    "evidence_summary",
+    "public_limitations",
+    "public_claim_boundary_table",
+    "public_command_surface",
+    "release_checklist",
+    "release_tag_metadata"
+  ],
+  "release_tag": "v3.0.0-public-research-package",
+  "public_release_is_biological_validation": false,
+  "public_release_is_medical_safety": false,
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false,
+  "non_claim_locks": [
+    "not_medical",
+    "not_biological_law",
+    "not_mechanism_proof"
+  ]
+}

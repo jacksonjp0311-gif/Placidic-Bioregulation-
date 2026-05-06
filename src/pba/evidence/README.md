@@ -126,3 +126,10 @@ Added:
 - release_candidate_report.py
 
 The report emits release readiness, evidence index, claim-boundary table, failure-surface index, command surface, downgrade locks, and no automatic replacement.
+
+## PBSA v3.0 public package report
+
+Added:
+- public_package_report.py
+
+The report emits publication abstract, evidence summary, public limitations, command surface, claim-boundary table, release checklist, release tag metadata, and no automatic replacement.

@@ -102,3 +102,8 @@ Added:
 
 Added:
 - pbsa_v2_7_release_candidate_audit_bundle.md
+
+## PBSA v3.0 theory addition
+
+Added:
+- pbsa_v3_0_public_research_package.md

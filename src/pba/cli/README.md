@@ -81,3 +81,8 @@ Added:
 
 Added:
 - python -m pba.cli release-candidate-report
+
+## PBSA v3.0 CLI command
+
+Added:
+- python -m pba.cli public-package-report

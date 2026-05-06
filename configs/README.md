@@ -134,3 +134,11 @@ Added:
 - configs/release/release_audit_manifest_v2_7.json
 
 These configs declare public audit surfaces, clone/run commands, evidence indexes, claim boundaries, failure-surface indexes, and release readiness checks.
+
+## PBSA v3.0 public package config
+
+Added:
+- configs/public_package/public_package_policy_v3_0.json
+- configs/public_package/public_release_manifest_v3_0.json
+
+These configs declare publication abstract, evidence summary, public limitations, command surface, claim boundaries, release checklist, release tag metadata, and public package readiness.

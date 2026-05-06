@@ -114,3 +114,9 @@ Added:
 Added:
 - docs/theory/pbsa_v2_7_release_candidate_audit_bundle.md
 - docs/architecture/pbsa_v2_7_implementation_map.md
+
+## PBSA v3.0 documentation archive
+
+Added:
+- docs/theory/pbsa_v3_0_public_research_package.md
+- docs/architecture/pbsa_v3_0_implementation_map.md

@@ -1,0 +1,26 @@
+{
+  "version": "PBSA-PublicReleaseManifest-v3.0",
+  "manifest_id": "public_release_manifest_v3_0",
+  "release_tag": "v3.0.0-public-research-package",
+  "public_outputs": {
+    "public_package_report": "reports/public_package/latest_public_package_report.json",
+    "public_package_summary": "reports/public_package/latest_public_package_report.md",
+    "publication_abstract": "reports/public_package/latest_publication_abstract.md",
+    "evidence_summary": "reports/public_package/latest_public_evidence_summary.json",
+    "public_limitations": "reports/public_package/latest_public_limitations.json",
+    "public_claim_boundary_table": "reports/public_package/latest_public_claim_boundary_table.json",
+    "public_command_surface": "reports/public_package/latest_public_command_surface.json",
+    "release_checklist": "reports/public_package/latest_release_checklist.json"
+  },
+  "source_reports": {
+    "release_candidate": "reports/release/latest_release_candidate_report.json",
+    "replay_audit": "reports/replay/latest_replay_audit_report.json",
+    "evidence_package": "reports/evidence_packages/latest_evidence_package_report.json",
+    "calibration": "reports/calibration/latest_calibration_report.json",
+    "stress_validation": "reports/stress_validation/latest_stress_validation_report.json",
+    "external_validation": "reports/external_validation/latest_external_validation_report.json",
+    "routed_validation": "reports/validation/latest_routed_validation_report.json"
+  },
+  "automatic_kernel_replacement_allowed": false,
+  "kernel_mutation_allowed": false
+}
